@@ -1,7 +1,7 @@
 const screens = ['welcome', 'mobile', 'otp', 'unit', 'confirm', 'dashboard', 'payment'];
 let currentScreen = 0;
 
-const root = document.getElementById('screenRoot');
+let root;
 
 function goTo(screenName) {
   const index = screens.indexOf(screenName);
@@ -250,6 +250,7 @@ const templates = {
 };
 
 function render() {
+  if (!root || !templates[screens[currentScreen]]) return;
   root.innerHTML = templates[screens[currentScreen]]();
   root.querySelectorAll('[data-action]').forEach((element) => {
     element.addEventListener('click', () => {
@@ -262,4 +263,7 @@ function render() {
   });
 }
 
-render();
+document.addEventListener('DOMContentLoaded', () => {
+  root = document.getElementById('screenRoot');
+  render();
+});
