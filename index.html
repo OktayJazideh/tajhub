@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TAJ HUB Mobile Preview</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <main class="stage">
+      <section class="phone-shell" aria-label="TAJ HUB mobile app preview">
+        <div class="phone-glow"></div>
+        <div class="phone-screen">
+          <div class="status-bar"><span>9:41</span><span>●●● 5G</span></div>
+          <div class="progress"><span id="progressFill"></span></div>
+          <div id="topRow" class="top-row hidden">
+            <button class="back" id="backBtn" aria-label="بازگشت">‹</button>
+            <div class="step-badge" id="stepBadge">مرحله ۱ از ۴</div>
+          </div>
+          <div id="screenRoot"></div>
+        </div>
+      </section>
+      <aside class="preview-panel">
+        <p class="eyebrow">TAJ HUB Resident App</p>
+        <h1>پریویو موبایل ورود ساکنین</h1>
+        <p>این نمونه فقط برای اپ موبایل ساخته شده و جریان خوش‌آمدگویی تا اتصال واحد را نمایش می‌دهد.</p>
+        <div class="screen-tabs" id="tabs"></div>
+      </aside>
+    </main>
+    <script src="/src/main.js"></script>
+  </body>
+</html>
