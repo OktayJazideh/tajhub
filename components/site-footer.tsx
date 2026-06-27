@@ -29,14 +29,6 @@ export function SiteFooter() {
             ))}
           </nav>
           <div className="h-px w-full max-w-xs gold-hairline" />
-          <div className="flex flex-col items-center gap-1">
-            <span className="text-sm tracking-[0.3em] text-gold-gradient">
-              TAJ HUB
-            </span>
-            <span className="text-xs tracking-[0.2em] text-muted-foreground">
-              LUXURY BUILDING OPERATING SYSTEM
-            </span>
-          </div>
           <p className="text-xs text-muted-foreground/70">
             © {new Date().getFullYear()} تاج هاب. تمامی حقوق محفوظ است.
           </p>
