@@ -271,4 +271,32 @@
     transform: translateY(0);
     filter: blur(0);
   }
+
+  /* Fade out effect for images - gradual disappearance at edges */
+  .image-fade {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .image-fade::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      transparent 60%,
+      rgba(0, 0, 0, 0.15) 80%,
+      rgba(0, 0, 0, 0.4) 95%,
+      rgb(var(--color-background)) 100%
+    );
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  .image-fade img,
+  .image-fade > div {
+    width: 100%;
+    height: 100%;
+  }
 }

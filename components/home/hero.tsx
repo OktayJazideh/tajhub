@@ -68,14 +68,16 @@ export function Hero() {
 
         {/* Image column */}
         <div className="relative order-1 flex justify-center lg:order-2">
-          <Image
-            src="/hero-tower.png"
-            alt="برج نمادین تاج هاب با هاله طلایی"
-            width={680}
-            height={680}
-            priority
-            className="h-auto w-full max-w-[520px] select-none"
-          />
+          <div className="image-fade w-full max-w-[520px]">
+            <Image
+              src="/hero-tower.png"
+              alt="برج نمادین تاج هاب با هاله طلایی"
+              width={680}
+              height={680}
+              priority
+              className="h-auto w-full select-none"
+            />
+          </div>
         </div>
       </div>
 

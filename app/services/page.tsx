@@ -174,13 +174,13 @@ export default function ServicesPage() {
           </div>
 
           <Reveal delay={120}>
-            <div className="relative">
+            <div className="image-fade relative">
               <Image
                 src="/services-hero.png"
                 alt="دو برج لوکس طلایی درون حلقه نور با کارت شناور TAJ HUB"
                 width={1024}
                 height={1024}
-                className="h-auto w-full animate-float object-contain"
+                className="h-auto w-full object-contain"
                 priority
               />
             </div>
@@ -236,13 +236,13 @@ export default function ServicesPage() {
       <section className="px-6 pb-20 lg:px-10">
         <Reveal className="mx-auto max-w-7xl">
           <div className="grid items-center gap-10 overflow-hidden rounded-2xl border border-gold/15 bg-card/40 p-8 lg:grid-cols-2 lg:p-12">
-            <div className="relative order-2 lg:order-1">
+            <div className="image-fade relative order-2 rounded-xl lg:order-1">
               <Image
                 src="/services-dashboard.png"
                 alt="لپ‌تاپ با داشبورد طلایی و کره زمین نورانی طلایی"
                 width={1024}
                 height={1024}
-                className="h-auto w-full rounded-xl object-contain"
+                className="h-auto w-full object-contain"
               />
             </div>
 

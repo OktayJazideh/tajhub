@@ -16,7 +16,7 @@ export function Logo({
   return (
     <Link
       href="/"
-      className={cn('group inline-flex shrink-0 items-center', className)}
+      className={cn('group inline-flex shrink-0 items-center image-fade', className)}
       aria-label="تاج هاب - صفحه اصلی"
     >
       <Image
