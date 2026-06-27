@@ -272,26 +272,25 @@
     filter: blur(0);
   }
 
-  /* Fade out effect for images - gradual disappearance at edges */
+  /*
+   * Feathered image edges. A static radial mask makes the image dissolve
+   * softly into the background on all four sides, so the frame/border is
+   * never visible and you can't tell where the photo ends. No animation.
+   * Works on any background color (mask = transparency, not an overlay).
+   * Not used on logos.
+   */
   .image-fade {
     position: relative;
-    overflow: hidden;
-  }
-
-  .image-fade::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-      to bottom,
-      transparent 0%,
-      transparent 60%,
-      rgba(0, 0, 0, 0.15) 80%,
-      rgba(0, 0, 0, 0.4) 95%,
-      rgb(var(--color-background)) 100%
+    -webkit-mask-image: radial-gradient(
+      ellipse 80% 80% at 50% 50%,
+      #000 45%,
+      transparent 92%
     );
-    pointer-events: none;
-    z-index: 10;
+    mask-image: radial-gradient(
+      ellipse 80% 80% at 50% 50%,
+      #000 45%,
+      transparent 92%
+    );
   }
 
   .image-fade img,
