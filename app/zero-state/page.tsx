@@ -223,7 +223,7 @@ export default function ZeroStatePage() {
           </div>
 
           <Reveal delay={120}>
-            <div className="image-fade relative overflow-hidden rounded-2xl border border-gold/15">
+            <div className="image-fade image-hover-wrap relative overflow-hidden rounded-2xl border border-gold/15">
               <Image
                 src="/zero-state-building.png"
                 alt="ورودی لوکس ساختمان با کره سیاه براق روی حلقه‌های نور طلایی"

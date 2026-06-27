@@ -57,7 +57,7 @@ export function PillarsSection() {
           {pillars.map((p, i) => (
             <Reveal key={p.title} delay={i * 90}>
               <div className="group flex h-full flex-col gap-5 bg-background p-8 transition-colors duration-500 hover:bg-card">
-                <span className="flex h-12 w-12 items-center justify-center rounded-md border border-gold/20 text-gold transition-all duration-500 group-hover:border-gold/50 group-hover:shadow-[0_0_24px_-8px_oklch(0.8_0.14_80)]">
+                <span className="icon-lift flex h-12 w-12 items-center justify-center rounded-md border border-gold/20 text-gold">
                   <p.icon className="h-6 w-6" />
                 </span>
                 <h3 className="text-lg font-semibold text-gold-soft">
@@ -110,7 +110,7 @@ export function EcosystemSection() {
           {modules.map((m, i) => (
             <Reveal key={m.label} delay={i * 70}>
               <div className="group flex items-start gap-4 rounded-xl border border-gold/12 bg-card/40 p-6 transition-all duration-500 hover:border-gold/35 hover:bg-card">
-                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-md bg-gold/10 text-gold transition-transform duration-500 group-hover:scale-110">
+                <span className="icon-lift flex h-11 w-11 shrink-0 items-center justify-center rounded-md bg-gold/10 text-gold">
                   <m.icon className="h-5 w-5" />
                 </span>
                 <div>
@@ -161,7 +161,7 @@ export function WhySection() {
             چرا ساختمان‌های لوکس به TAJ HUB نیاز دارند؟
           </h2>
           <p className="mt-6 max-w-md leading-relaxed text-muted-foreground">
-            ساختمان‌های لوکس تنها با معماری زیبا شناخته نمی‌شوند؛ ارزش واقعی آن‌ها در کیفیت مدیریت، حفظ دارایی‌ها، تجربه ساکنین و نگهداری هوشمند آن‌هاست.
+            ساختمان‌های لوکس تنها با معماری زیبا شناخته نمی‌شوند؛ ارزش واقعی آن‌ها در کیفیت مدیریت، حفظ دارایی‌ها، تجربه ساکنین و نگهداری ه��شمند آن‌هاست.
           </p>
           <p className="mt-3 max-w-md leading-relaxed text-muted-foreground">
             TAJ HUB تمام این عناصر را در یک اکوسیستم یکپارچه گرد هم می‌آورد.

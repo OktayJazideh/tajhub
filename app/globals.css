@@ -273,6 +273,38 @@
   }
 
   /*
+   * Subtle zoom on hover for content images (not logos).
+   * The parent must be overflow:hidden — wrap the <Image> in image-hover-wrap.
+   */
+  .image-hover-wrap {
+    overflow: hidden;
+  }
+
+  .image-hover-wrap img {
+    transition: transform 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    will-change: transform;
+  }
+
+  .image-hover-wrap:hover img {
+    transform: scale(1.045);
+  }
+
+  /*
+   * Icon card: lifts forward and glows on hover.
+   * Apply .icon-lift to the icon wrapper element.
+   */
+  .icon-lift {
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+      box-shadow 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    will-change: transform, box-shadow;
+  }
+
+  .icon-lift:hover {
+    transform: scale(1.18) translateY(-3px);
+    box-shadow: 0 6px 28px -6px oklch(0.8 0.14 80 / 55%);
+  }
+
+  /*
    * Feathered image edges. A static radial mask makes the image dissolve
    * softly into the background on all four sides, so the frame/border is
    * never visible and you can't tell where the photo ends. No animation.

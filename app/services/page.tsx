@@ -172,7 +172,7 @@ export default function ServicesPage() {
           </div>
 
           <Reveal delay={120}>
-            <div className="image-fade relative">
+            <div className="image-fade image-hover-wrap relative">
               <Image
                 src="/services-hero.png"
                 alt="دو برج لوکس طلایی درون حلقه نور با کارت شناور TAJ HUB"
@@ -193,7 +193,7 @@ export default function ServicesPage() {
             {services.map((s, i) => (
               <Reveal key={s.title} delay={(i % 5) * 70}>
                 <article className="group flex h-full flex-col rounded-xl border border-gold/12 bg-card/40 p-6 text-center transition-all duration-500 hover:-translate-y-1 hover:border-gold/35 hover:bg-card hover:shadow-[0_18px_50px_-24px_oklch(0.8_0.14_80/0.6)]">
-                  <span className="mx-auto flex h-16 w-16 items-center justify-center rounded-xl border border-gold/20 bg-gold/5 text-gold transition-all duration-500 group-hover:shadow-[0_0_28px_-8px_oklch(0.8_0.14_80)]">
+                  <span className="icon-lift mx-auto flex h-16 w-16 items-center justify-center rounded-xl border border-gold/20 bg-gold/5 text-gold">
                     <s.icon className="h-8 w-8" />
                   </span>
                   <h2 className="mt-5 text-base font-semibold text-gold-soft">
@@ -234,7 +234,7 @@ export default function ServicesPage() {
       <section className="px-6 pb-20 lg:px-10">
         <Reveal className="mx-auto max-w-7xl">
           <div className="grid items-center gap-10 overflow-hidden rounded-2xl border border-gold/15 bg-card/40 p-8 lg:grid-cols-2 lg:p-12">
-            <div className="image-fade relative order-2 rounded-xl lg:order-1">
+            <div className="image-fade image-hover-wrap relative order-2 rounded-xl lg:order-1">
               <Image
                 src="/services-dashboard.png"
                 alt="لپ‌تاپ با داشبورد طلایی و کره زمین نورانی طلایی"

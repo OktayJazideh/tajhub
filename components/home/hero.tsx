@@ -65,7 +65,7 @@ export function Hero() {
 
         {/* Image column */}
         <div className="relative order-1 flex justify-center lg:order-2">
-          <div className="image-fade w-full max-w-[520px]">
+          <div className="image-fade image-hover-wrap w-full max-w-[520px]">
             <Image
               src="/hero-tower.png"
               alt="برج نمادین تاج هاب با هاله طلایی"
