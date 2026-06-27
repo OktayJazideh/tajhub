@@ -187,6 +187,9 @@ export default function ZeroStatePage() {
               </nav>
             </Reveal>
             <Reveal delay={80}>
+              <p className="mb-4 text-sm font-medium tracking-[0.2em] text-gold-soft">
+                وضعیت صفر، نقطه شروع مدیریت هوشمند ساختمان است.
+              </p>
               <h1 className="text-balance text-4xl font-bold leading-tight sm:text-5xl">
                 وضعیت صفر ساختمان
                 <span className="mt-2 block text-gold-gradient">
@@ -196,8 +199,7 @@ export default function ZeroStatePage() {
             </Reveal>
             <Reveal delay={160}>
               <p className="mt-6 max-w-md leading-relaxed text-muted-foreground">
-                ارزیابی کامل و دقیق وضعیت ساختمان در شانزده فصل تخصصی برای شناخت
-                دقیق، برنامه‌ریزی بهتر و تصمیم‌گیری هوشمندانه.
+                اولین قدم برای مدیریت حرفه‌ای، شناخت دقیق وضعیت واقعی ساختمان است. TAJ HUB این شناخت را در ۱۶ فصل تخصصی فراهم می‌کند.
               </p>
             </Reveal>
 
@@ -286,17 +288,24 @@ export default function ZeroStatePage() {
                   گزارش وضعیت صفر ساختمان
                 </h2>
                 <p className="mt-3 leading-relaxed text-muted-foreground">
-                  پس از ارزیابی ۱۶ فصل، گزارش کامل با تحلیل وضعیت، ریسک‌ها و
-                  پیشنهادهای بهبود ارائه می‌شود.
+                  پس از تکمیل ارزیابی ۱۶ فصل، گزارش جامعی شامل وضعیت ساختمان، ریسک‌ها، اولویت تعمیرات، برنامه نگهداری پیشگیرانه (PM) و پیشنهادهای اجرایی ارائه می‌شود.
                 </p>
                 <ul className="mt-5 flex flex-wrap gap-x-6 gap-y-2 text-sm text-muted-foreground">
                   <li className="flex items-center gap-2">
                     <ClipboardCheck className="h-4 w-4 text-gold" />
-                    گزارش دقیق و جامع
+                    تیم متخصص مدیریت ساختمان
                   </li>
                   <li className="flex items-center gap-2">
                     <ClipboardCheck className="h-4 w-4 text-gold" />
-                    اولویت‌بندی اقدامات
+                    ارزیابی جامع ۱۶ فصل
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <ClipboardCheck className="h-4 w-4 text-gold" />
+                    مبتنی بر استانداردهای بین‌المللی
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <ClipboardCheck className="h-4 w-4 text-gold" />
+                    گزارش دقیق و قابل اقدام
                   </li>
                 </ul>
               </div>

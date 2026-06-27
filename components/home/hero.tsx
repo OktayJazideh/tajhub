@@ -39,10 +39,7 @@ export function Hero() {
             className="mt-6 max-w-lg leading-relaxed text-muted-foreground"
             style={{ animation: 'fade-up 0.9s cubic-bezier(0.16,1,0.3,1) both', animationDelay: '0.25s' }}
           >
-            TAJ HUB تنها یک نرم‌افزار مدیریت ساختمان نیست. اکوسیستمی یکپارچه برای
-            حفظ دانش، تجربه، تجهیزات، دارایی‌ها، فرآیندها و کیفیت زندگی در
-            ساختمان‌های لوکس؛ از وضعیت صفر و نگهداری پیشگیرانه تا مدیریت مالی و
-            تصمیم‌گیری‌های مدیریتی، همه در یک سیستم هوشمند و یکپارچه.
+            TAJ HUB تنها یک نرم‌افزار نیست. سیستم‌عاملی است که وضعیت صفر، نگهداری پیشگیرانه، حافظه ساختمان، مدیریت ساکنان و عملیات ساختمان را در یک اکوسیستم هوشمند به هم متصل می‌کند.
           </p>
 
           <div
@@ -61,7 +58,7 @@ export function Hero() {
               className="group inline-flex items-center justify-center gap-2 rounded-md border border-gold/25 px-7 py-3.5 text-sm text-foreground/90 transition-all duration-300 hover:border-gold/50 hover:text-gold"
             >
               <Play className="h-4 w-4" />
-              مشاهده اکوسیستم
+              آشنایی با سیستم
             </Link>
           </div>
         </div>

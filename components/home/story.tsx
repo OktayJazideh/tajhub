@@ -9,8 +9,8 @@ import { Reveal } from '@/components/reveal'
 
 const ordinaryTruths = [
   'بسیاری از ساختمان‌ها تجهیزات دارند.',
-  'بسیاری از ساختمان‌ها بودجه دارند.',
   'بسیاری از ساختمان‌ها مدیر دارند.',
+  'بسیاری از ساختمان‌ها بودجه دارند.',
 ]
 
 export function StorySection() {
@@ -44,27 +44,26 @@ export function StorySection() {
           ))}
         </div>
 
-        {/* The turning point — full light, the line that changes everything */}
-        <Reveal soft delay={300} className="mt-20">
+        {/* The turning point — directly connected, no gap */}
+        <Reveal soft delay={300} className="mt-12">
           <div
             aria-hidden
-            className="mx-auto mb-12 h-px w-24 gold-hairline"
+            className="mx-auto mb-10 h-px w-24 gold-hairline"
           />
           <p className="text-balance text-3xl font-bold leading-[1.45] text-foreground sm:text-4xl lg:text-5xl">
-            اما تعداد کمی از ساختمان‌ها
-            <span className="mt-2 block text-gold-gradient">حافظه دارند.</span>
+            اما کمتر ساختمانی
+            <span className="mt-2 block text-gold-gradient">حافظه دارد.</span>
           </p>
         </Reveal>
 
         {/* The answer */}
-        <Reveal soft delay={220} className="mt-24">
+        <Reveal soft delay={220} className="mt-20">
           <p className="text-pretty text-lg leading-relaxed text-muted-foreground sm:text-xl">
-            ساختمان‌ها فراموش می‌کنند؛ تصمیم‌ها، تجربه‌ها و دانشی که سال‌ها ساخته
-            شده، با هر تغییرِ مدیریت محو می‌شود.
+            هر تعمیر، هر تصمیم، هر هزینه، هر خرابی و هر تجربه، بخشی از تاریخ ساختمان است. اگر این دانش ثبت نشود، با تغییر مدیر، هیئت‌مدیره یا پرسنل از بین می‌رود.
           </p>
-          <p className="mt-8 text-balance text-2xl font-semibold leading-relaxed text-gold-soft sm:text-3xl">
-            <span className="font-display tracking-wide">TAJ HUB</span> برای
-            ساختنِ حافظهٔ ساختمان ایجاد شده است.
+          <p className="mt-10 text-balance text-2xl font-semibold leading-relaxed text-gold-soft sm:text-3xl">
+            <span className="font-display tracking-wide">TAJ HUB</span>{' '}
+            حافظه زنده ساختمان را می‌سازد.
           </p>
         </Reveal>
       </div>

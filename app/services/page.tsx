@@ -123,9 +123,9 @@ const services: Service[] = [
 ]
 
 const stats = [
-  { icon: Users, value: '+۵۰۰', label: 'ساختمان تحت مدیریت' },
-  { icon: Smile, value: '۹۸٪', label: 'رضایت کاربران' },
-  { icon: Clock, value: '۲۴/۷', label: 'پشتیبانی آنلاین' },
+  { icon: Users, value: 'تخصصی', label: 'پشتیبانی تخصصی' },
+  { icon: Smile, value: 'سریع', label: 'راه‌اندازی سریع' },
+  { icon: Clock, value: 'کامل', label: 'همراهی تا استقرار کامل' },
 ]
 
 const clients = [
@@ -160,15 +160,13 @@ export default function ServicesPage() {
               <h1 className="text-balance text-4xl font-bold leading-tight sm:text-5xl">
                 خدمات <span className="text-gold-gradient">TAJ HUB</span>
                 <span className="mt-3 block text-2xl font-semibold text-gold-soft sm:text-3xl">
-                  مدیریت هوشمند ساختمان در یک پلتفرم جامع
+                  تمام خدمات مدیریت ساختمان، در یک اکوسیستم هوشمند.
                 </span>
               </h1>
             </Reveal>
             <Reveal delay={160}>
               <p className="mt-6 max-w-md leading-relaxed text-muted-foreground">
-                ما در TAJ HUB مجموعه‌ای کامل از خدمات تخصصی را به مدیران ساختمان و
-                ساکنین ارائه می‌دهیم تا تمامی امور ساختمان به صورت یکپارچه و
-                هوشمند مدیریت شود.
+                از وضعیت صفر و نگهداری پیشگیرانه تا مدیریت ساکنان، تجهیزات، مالی و گزارش‌های مدیریتی؛ همه در یک سیستم یکپارچه.
               </p>
             </Reveal>
           </div>
@@ -248,10 +246,10 @@ export default function ServicesPage() {
 
             <div className="order-1 text-center lg:order-2 lg:text-right">
               <h2 className="text-balance text-2xl font-bold sm:text-3xl">
-                همه خدمات مدیریت ساختمان در یک پلتفرم هوشمند
+                تمام نیازهای مدیریت ساختمان‌های لوکس، در یک اکوسیستم هوشمند.
               </h2>
               <p className="mt-4 leading-relaxed text-muted-foreground">
-                TAJ HUB همراه مطمئن شما برای ساختن محیطی ایمن، پایدار و کارآمد.
+                از وضعیت صفر و نگهداری پیشگیرانه تا مدیریت مالی، ساکنان، تجهیزات و گزارش‌های مدیریتی؛ همه در یک سیستم یکپارچه.
               </p>
 
               <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center lg:justify-start">

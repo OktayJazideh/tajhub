@@ -18,24 +18,24 @@ import { Reveal } from '@/components/reveal'
 /* ---------- Section 3: Four pillars ---------- */
 const pillars = [
   {
-    icon: BrainCircuit,
-    title: 'حافظهٔ ساختمان',
-    text: 'ثبت دانش، تجربیات، سوابق، تصمیمات و تاریخچهٔ ساختمان برای نسل‌های بعدی مدیریت.',
-  },
-  {
     icon: Gauge,
     title: 'وضعیت صفر',
-    text: 'شناخت دقیق واقعیت ساختمان پیش از هر تصمیم مدیریتی.',
+    text: 'شناخت دقیق ساختمان پیش از هر تصمیم.',
   },
   {
     icon: ShieldCheck,
     title: 'نگهداری پیشگیرانه',
-    text: 'کاهش هزینه‌های اضطراری از طریق پایش مستمر تجهیزات و زیرساخت‌ها.',
+    text: 'پیشگیری از خرابی قبل از وقوع.',
   },
   {
     icon: Users,
     title: 'تجربهٔ ساکنین',
-    text: 'ایجاد شفافیت، آرامش و ارتباط بهتر میان مدیریت، مالکان و ساکنین.',
+    text: 'شفافیت، آرامش و ارتباط بهتر میان مدیریت و ساکنین.',
+  },
+  {
+    icon: BrainCircuit,
+    title: 'حافظهٔ ساختمان',
+    text: 'ثبت دانش، سوابق و تصمیمات ساختمان برای نسل‌های بعدی مدیریت.',
   },
 ]
 
@@ -46,8 +46,11 @@ export function PillarsSection() {
         <Reveal className="mb-16 text-center">
           <span className="text-sm tracking-[0.3em] text-gold">اکوسیستم</span>
           <h2 className="mt-4 text-balance text-3xl font-bold sm:text-4xl">
-            چهار ستون اصلی اکوسیستم
+            چهار ستون سیستم‌عامل ساختمان‌های لوکس
           </h2>
+          <p className="mx-auto mt-4 max-w-lg text-muted-foreground">
+            هر تصمیم، هر سرویس و هر ماژول TAJ HUB بر پایه این چهار ستون طراحی شده است.
+          </p>
         </Reveal>
 
         <div className="grid gap-px overflow-hidden rounded-xl border border-gold/10 bg-gold/10 sm:grid-cols-2 lg:grid-cols-4">
@@ -74,12 +77,12 @@ export function PillarsSection() {
 
 /* ---------- Section 4: Ecosystem modules ---------- */
 const modules = [
-  { icon: Gauge, label: 'وضعیت صفر' },
-  { icon: ClipboardList, label: 'چکاپ‌های دوره‌ای' },
-  { icon: Wrench, label: 'مدیریت تجهیزات' },
-  { icon: Wallet, label: 'مدیریت مالی' },
-  { icon: Users, label: 'مدیریت ساکنین' },
-  { icon: LayoutDashboard, label: 'داشبورد مدیریتی' },
+  { icon: Gauge, label: 'وضعیت صفر', desc: 'شناخت دقیق ساختمان پیش از هر تصمیم.' },
+  { icon: ClipboardList, label: 'چکاپ‌های دوره‌ای', desc: 'پیشگیری از خرابی قبل از وقوع.' },
+  { icon: Wrench, label: 'مدیریت تجهیزات', desc: 'شناسنامه و چرخه عمر دارایی‌ها.' },
+  { icon: Wallet, label: 'مدیریت مالی', desc: 'شفافیت کامل درآمدها و هزینه‌ها.' },
+  { icon: Users, label: 'مدیریت ساکنین', desc: 'ارتباط هوشمند با ساکنان.' },
+  { icon: LayoutDashboard, label: 'داشبورد مدیریتی', desc: 'تصمیم‌گیری مبتنی بر داده.' },
 ]
 
 export function EcosystemSection() {
@@ -95,34 +98,39 @@ export function EcosystemSection() {
       <div className="relative mx-auto max-w-7xl px-6 lg:px-10">
         <Reveal className="mb-16 text-center">
           <h2 className="text-balance text-3xl font-bold sm:text-4xl">
-            اکوسیستم <span className="text-gold-gradient">TAJ HUB</span>
+            اکوسیستم مدیریت ساختمان‌های لوکس{' '}
+            <span className="text-gold-gradient">TAJ HUB</span>
           </h2>
-          <p className="mx-auto mt-4 max-w-md text-muted-foreground">
-            ماژول‌هایی یکپارچه که در کنار هم، تصویری کامل از ساختمان می‌سازند.
+          <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
+            تمام ماژول‌های موردنیاز برای مدیریت یکپارچه ساختمان، در یک سیستم‌عامل هوشمند گرد هم آمده‌اند.
           </p>
         </Reveal>
 
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {modules.map((m, i) => (
             <Reveal key={m.label} delay={i * 70}>
-              <div className="group flex items-center gap-4 rounded-xl border border-gold/12 bg-card/40 p-6 transition-all duration-500 hover:border-gold/35 hover:bg-card">
+              <div className="group flex items-start gap-4 rounded-xl border border-gold/12 bg-card/40 p-6 transition-all duration-500 hover:border-gold/35 hover:bg-card">
                 <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-md bg-gold/10 text-gold transition-transform duration-500 group-hover:scale-110">
                   <m.icon className="h-5 w-5" />
                 </span>
-                <span className="text-base font-medium text-foreground/90">
-                  {m.label}
-                </span>
+                <div>
+                  <p className="text-base font-medium text-foreground/90">{m.label}</p>
+                  <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{m.desc}</p>
+                </div>
               </div>
             </Reveal>
           ))}
         </div>
 
         <Reveal className="mt-14 text-center" delay={120}>
+          <p className="mx-auto max-w-lg text-sm leading-relaxed text-muted-foreground">
+            همه این ماژول‌ها در کنار یکدیگر، تصویری کامل از ساختمان شما ایجاد می‌کنند.
+          </p>
           <Link
             href="/services"
-            className="group inline-flex items-center gap-2 text-sm text-gold transition-colors hover:text-gold-soft"
+            className="group mt-6 inline-flex items-center gap-2 text-sm text-gold transition-colors hover:text-gold-soft"
           >
-            مشاهدهٔ همهٔ خدمات
+            مشاهده اکوسیستم کامل
             <ArrowLeft className="h-4 w-4 transition-transform duration-300 group-hover:-translate-x-1" />
           </Link>
         </Reveal>
@@ -133,44 +141,61 @@ export function EcosystemSection() {
 
 /* ---------- Section 5: Why TAJ HUB ---------- */
 const reasons = [
-  'حفظ دانش و تجربهٔ ساختمان',
-  'کاهش هزینه‌های ناگهانی',
+  'کاهش هزینه‌های نگهداری',
   'افزایش عمر تجهیزات',
-  'کاهش ریسک‌های عملیاتی',
+  'حفظ دانش و حافظه ساختمان',
+  'افزایش ارزش سرمایه',
   'شفافیت مدیریتی',
-  'افزایش ارزش ساختمان',
-  'بهبود تجربهٔ زندگی ساکنین',
-  'ایجاد حافظهٔ ماندگار برای ساختمان',
+  'تجربه‌ای آرام و لوکس برای ساکنین',
+  'کاهش ریسک‌های عملیاتی',
+  'تصمیم‌گیری مبتنی بر داده',
 ]
 
 export function WhySection() {
   return (
     <section className="relative border-t border-gold/10 py-28 lg:py-36">
-      <div className="mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2 lg:px-10">
+      <div className="mx-auto grid max-w-7xl items-start gap-16 px-6 lg:grid-cols-2 lg:px-10">
         <Reveal>
           <span className="text-sm tracking-[0.3em] text-gold">چرا تاج هاب</span>
           <h2 className="mt-4 text-balance text-3xl font-bold leading-snug sm:text-4xl">
-            چرا TAJ HUB؟
+            چرا ساختمان‌های لوکس به TAJ HUB نیاز دارند؟
           </h2>
           <p className="mt-6 max-w-md leading-relaxed text-muted-foreground">
-            مدیریت ساختمان لوکس به ابزاری در سطح خود نیاز دارد؛ ابزاری که ارزش،
-            دانش و کیفیت زندگی را برای سال‌ها حفظ کند.
+            ساختمان‌های لوکس تنها با معماری زیبا شناخته نمی‌شوند؛ ارزش واقعی آن‌ها در کیفیت مدیریت، حفظ دارایی‌ها، تجربه ساکنین و نگهداری هوشمند آن‌هاست.
+          </p>
+          <p className="mt-3 max-w-md leading-relaxed text-muted-foreground">
+            TAJ HUB تمام این عناصر را در یک اکوسیستم یکپارچه گرد هم می‌آورد.
           </p>
         </Reveal>
 
-        <ul className="grid gap-px overflow-hidden rounded-xl border border-gold/10 bg-gold/10 sm:grid-cols-2">
-          {reasons.map((r, i) => (
-            <Reveal as="li" key={r} delay={i * 60}>
-              <div className="flex h-full items-center gap-3 bg-background p-5">
-                <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-gold/12 text-gold">
-                  <Check className="h-4 w-4" />
-                </span>
-                <span className="text-sm text-foreground/90">{r}</span>
-              </div>
-            </Reveal>
-          ))}
-        </ul>
+        <div>
+          <Reveal>
+            <span className="text-sm font-semibold tracking-[0.2em] text-gold-soft">
+              ارزشی که TAJ HUB خلق می‌کند
+            </span>
+          </Reveal>
+          <ul className="mt-5 grid gap-px overflow-hidden rounded-xl border border-gold/10 bg-gold/10 sm:grid-cols-2">
+            {reasons.map((r, i) => (
+              <Reveal as="li" key={r} delay={i * 60}>
+                <div className="flex h-full items-center gap-3 bg-background p-5">
+                  <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-gold/12 text-gold">
+                    <Check className="h-4 w-4" />
+                  </span>
+                  <span className="text-sm text-foreground/90">{r}</span>
+                </div>
+              </Reveal>
+            ))}
+          </ul>
+        </div>
       </div>
+
+      {/* Golden quote */}
+      <Reveal className="mx-auto mt-20 max-w-4xl px-6 text-center lg:px-10">
+        <div aria-hidden className="mx-auto mb-8 h-px w-16 gold-hairline" />
+        <p className="text-balance text-2xl font-semibold leading-relaxed text-gold-soft sm:text-3xl">
+          ساختمان لوکس، تنها با نمای زیبا ساخته نمی‌شود؛ با مدیریت هوشمند ماندگار می‌شود.
+        </p>
+      </Reveal>
     </section>
   )
 }
@@ -187,16 +212,17 @@ export function LegacySection() {
         </Reveal>
         <Reveal delay={100}>
           <h2 className="mt-8 text-balance text-3xl font-bold leading-[1.4] sm:text-4xl">
-            برج‌ها فقط برای امروز ساخته نمی‌شوند.
-            <span className="mt-2 block text-gold-gradient">
-              برای نسل بعد نیز ساخته می‌شوند.
-            </span>
+            مدیریت ساختمان، فقط اداره امور روزمره نیست.
           </h2>
         </Reveal>
         <Reveal delay={180}>
           <p className="mx-auto mt-8 max-w-xl text-lg leading-relaxed text-muted-foreground">
-            مدیریت ساختمان فقط ادارهٔ امروز نیست؛ حفظ ارزش، دانش، تجربه و کیفیت
-            زندگی برای سال‌های آینده است.
+            مدیریت ساختمان یعنی حفظ سرمایه، ثبت دانش، افزایش طول عمر تجهیزات و خلق تجربه‌ای ماندگار برای ساکنان؛ امروز، فردا و سال‌های آینده.
+          </p>
+        </Reveal>
+        <Reveal delay={260}>
+          <p className="mx-auto mt-6 max-w-xl text-lg font-semibold leading-relaxed text-gold-soft">
+            ساختمان‌های لوکس، به مدیریت لوکس نیاز دارند.
           </p>
         </Reveal>
       </div>
@@ -217,7 +243,10 @@ export function ClosingCta() {
           <CircleDot className="h-7 w-7 text-gold/70" />
         </Reveal>
         <Reveal delay={100}>
-          <h2 className="mt-8 text-balance text-3xl font-bold leading-snug sm:text-4xl lg:text-5xl">
+          <p className="text-sm font-medium tracking-[0.2em] text-gold-soft">
+            ساختمان‌های لوکس، به مدیریت لوکس نیاز دارند.
+          </p>
+          <h2 className="mt-6 text-balance text-3xl font-bold leading-snug sm:text-4xl lg:text-5xl">
             اگر ساختمانتان لوکس است،
             <span className="mt-2 block text-gold-gradient">
               مدیریت آن نیز باید در همان سطح باشد.
