@@ -12,27 +12,18 @@ export function Logo({
   return (
     <Link
       href="/"
-      className={cn('group flex items-center gap-3', className)}
+      className={cn('group inline-flex items-center', className)}
       aria-label="تاج هاب - صفحه اصلی"
     >
       <Image
-        src="/taj-hub-icon.jpg"
-        alt="نشان تاج هاب"
-        width={44}
-        height={44}
-        className="h-11 w-11 rounded-md object-cover ring-1 ring-gold/20 transition-transform duration-500 group-hover:scale-105"
+        src="/logo.png"
+        alt="TAJ HUB — Building Management Intelligence"
+        width={showTagline ? 180 : 120}
+        height={showTagline ? 72 : 48}
+        className="h-auto w-auto object-contain transition-opacity duration-500 group-hover:opacity-90"
+        style={{ maxHeight: showTagline ? '72px' : '48px' }}
         priority
       />
-      <span className="flex flex-col leading-none">
-        <span className="font-display text-2xl font-semibold tracking-[0.18em] text-gold-gradient">
-          TAJ HUB
-        </span>
-        {showTagline && (
-          <span className="mt-1 text-[10px] tracking-[0.25em] text-muted-foreground">
-            LUXURY BUILDING OS
-          </span>
-        )}
-      </span>
     </Link>
   )
 }
