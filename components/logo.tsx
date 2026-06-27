@@ -22,10 +22,10 @@ export function Logo({
       <Image
         src="/logo.png"
         alt="TAJ HUB — Building Management Intelligence"
-        width={showTagline ? 220 : 140}
-        height={showTagline ? 88 : 56}
+        width={showTagline ? 400 : 240}
+        height={showTagline ? 160 : 120}
         className="h-auto w-auto object-contain transition-opacity duration-500 group-hover:opacity-85"
-        style={{ maxHeight: showTagline ? '88px' : '52px' }}
+        style={{ height: showTagline ? '20rem' : '120px' }}
         priority
       />
     </Link>
