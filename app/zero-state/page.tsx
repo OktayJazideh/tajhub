@@ -240,7 +240,7 @@ export default function ZeroStatePage() {
                 width={1400}
                 height={933}
                 priority
-                className="img-fade-hero h-auto w-full select-none"
+                className="img-fade h-auto w-full select-none"
               />
             </div>
           </div>

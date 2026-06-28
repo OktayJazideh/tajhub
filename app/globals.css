@@ -305,127 +305,51 @@
   }
 
   /*
-   * ultra-soft-fade: sophisticated 4-stop gradient fade on all edges.
-   * Applied directly to <img> tag. Uses CSS variable for responsive fade width.
-   * smooth opacity curve: transparent → 8% → 28% → 62% → full opaque.
+   * img-fade: ONE dynamic class for every faded image.
+   * --fade is a PERCENTAGE so the fade is always proportional to the image
+   * size — only the outer edges and the four corners dissolve, while the
+   * large central area of the photo stays fully visible.
+   * Two gradients (horizontal + vertical) are intersected so corners fade too.
+   * Override --fade per-element (e.g. style={{ "--fade": "8%" }}) when needed.
    */
-  .ultra-soft-fade {
-    --fade: clamp(140px, 14vw, 260px);
+  .img-fade {
+    --fade: 14%;
     display: block;
     width: 100%;
     height: auto;
-    object-fit: cover;
     -webkit-mask-image:
       linear-gradient(to right,
         transparent 0,
-        rgba(0,0,0,.08) calc(var(--fade) * .20),
-        rgba(0,0,0,.28) calc(var(--fade) * .45),
-        rgba(0,0,0,.62) calc(var(--fade) * .72),
+        rgba(0,0,0,.5) calc(var(--fade) * .5),
         #000 var(--fade),
         #000 calc(100% - var(--fade)),
-        rgba(0,0,0,.62) calc(100% - var(--fade) * .72),
-        rgba(0,0,0,.28) calc(100% - var(--fade) * .45),
-        rgba(0,0,0,.08) calc(100% - var(--fade) * .20),
+        rgba(0,0,0,.5) calc(100% - var(--fade) * .5),
         transparent 100%
       ),
       linear-gradient(to bottom,
         transparent 0,
-        rgba(0,0,0,.08) calc(var(--fade) * .20),
-        rgba(0,0,0,.28) calc(var(--fade) * .45),
-        rgba(0,0,0,.62) calc(var(--fade) * .72),
+        rgba(0,0,0,.5) calc(var(--fade) * .5),
         #000 var(--fade),
         #000 calc(100% - var(--fade)),
-        rgba(0,0,0,.62) calc(100% - var(--fade) * .72),
-        rgba(0,0,0,.28) calc(100% - var(--fade) * .45),
-        rgba(0,0,0,.08) calc(100% - var(--fade) * .20),
+        rgba(0,0,0,.5) calc(100% - var(--fade) * .5),
         transparent 100%
       );
     -webkit-mask-composite: source-in;
     mask-image:
       linear-gradient(to right,
         transparent 0,
-        rgba(0,0,0,.08) calc(var(--fade) * .20),
-        rgba(0,0,0,.28) calc(var(--fade) * .45),
-        rgba(0,0,0,.62) calc(var(--fade) * .72),
+        rgba(0,0,0,.5) calc(var(--fade) * .5),
         #000 var(--fade),
         #000 calc(100% - var(--fade)),
-        rgba(0,0,0,.62) calc(100% - var(--fade) * .72),
-        rgba(0,0,0,.28) calc(100% - var(--fade) * .45),
-        rgba(0,0,0,.08) calc(100% - var(--fade) * .20),
+        rgba(0,0,0,.5) calc(100% - var(--fade) * .5),
         transparent 100%
       ),
       linear-gradient(to bottom,
         transparent 0,
-        rgba(0,0,0,.08) calc(var(--fade) * .20),
-        rgba(0,0,0,.28) calc(var(--fade) * .45),
-        rgba(0,0,0,.62) calc(var(--fade) * .72),
+        rgba(0,0,0,.5) calc(var(--fade) * .5),
         #000 var(--fade),
         #000 calc(100% - var(--fade)),
-        rgba(0,0,0,.62) calc(100% - var(--fade) * .72),
-        rgba(0,0,0,.28) calc(100% - var(--fade) * .45),
-        rgba(0,0,0,.08) calc(100% - var(--fade) * .20),
-        transparent 100%
-      );
-    mask-composite: intersect;
-  }
-
-  /* img-fade & img-fade-hero: both use ultra-soft-fade */
-  .img-fade,
-  .img-fade-hero {
-    --fade: clamp(140px, 14vw, 260px);
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    -webkit-mask-image:
-      linear-gradient(to right,
-        transparent 0,
-        rgba(0,0,0,.08) calc(var(--fade) * .20),
-        rgba(0,0,0,.28) calc(var(--fade) * .45),
-        rgba(0,0,0,.62) calc(var(--fade) * .72),
-        #000 var(--fade),
-        #000 calc(100% - var(--fade)),
-        rgba(0,0,0,.62) calc(100% - var(--fade) * .72),
-        rgba(0,0,0,.28) calc(100% - var(--fade) * .45),
-        rgba(0,0,0,.08) calc(100% - var(--fade) * .20),
-        transparent 100%
-      ),
-      linear-gradient(to bottom,
-        transparent 0,
-        rgba(0,0,0,.08) calc(var(--fade) * .20),
-        rgba(0,0,0,.28) calc(var(--fade) * .45),
-        rgba(0,0,0,.62) calc(var(--fade) * .72),
-        #000 var(--fade),
-        #000 calc(100% - var(--fade)),
-        rgba(0,0,0,.62) calc(100% - var(--fade) * .72),
-        rgba(0,0,0,.28) calc(100% - var(--fade) * .45),
-        rgba(0,0,0,.08) calc(100% - var(--fade) * .20),
-        transparent 100%
-      );
-    -webkit-mask-composite: source-in;
-    mask-image:
-      linear-gradient(to right,
-        transparent 0,
-        rgba(0,0,0,.08) calc(var(--fade) * .20),
-        rgba(0,0,0,.28) calc(var(--fade) * .45),
-        rgba(0,0,0,.62) calc(var(--fade) * .72),
-        #000 var(--fade),
-        #000 calc(100% - var(--fade)),
-        rgba(0,0,0,.62) calc(100% - var(--fade) * .72),
-        rgba(0,0,0,.28) calc(100% - var(--fade) * .45),
-        rgba(0,0,0,.08) calc(100% - var(--fade) * .20),
-        transparent 100%
-      ),
-      linear-gradient(to bottom,
-        transparent 0,
-        rgba(0,0,0,.08) calc(var(--fade) * .20),
-        rgba(0,0,0,.28) calc(var(--fade) * .45),
-        rgba(0,0,0,.62) calc(var(--fade) * .72),
-        #000 var(--fade),
-        #000 calc(100% - var(--fade)),
-        rgba(0,0,0,.62) calc(100% - var(--fade) * .72),
-        rgba(0,0,0,.28) calc(100% - var(--fade) * .45),
-        rgba(0,0,0,.08) calc(100% - var(--fade) * .20),
+        rgba(0,0,0,.5) calc(100% - var(--fade) * .5),
         transparent 100%
       );
     mask-composite: intersect;
