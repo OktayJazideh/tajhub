@@ -234,7 +234,7 @@ export function LegacySection() {
               alt="لوگو TAJ HUB با هاله طلایی و افق شهر"
               width={800}
               height={1067}
-              className="h-auto w-full select-none"
+              className="img-fade h-auto w-full select-none"
             />
           </div>
         </Reveal>

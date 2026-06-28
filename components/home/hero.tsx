@@ -72,7 +72,7 @@ export function Hero() {
               width={1400}
               height={933}
               priority
-              className="h-auto w-full select-none"
+              className="img-fade-hero h-auto w-full select-none"
             />
           </div>
         </div>

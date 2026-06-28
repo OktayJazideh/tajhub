@@ -195,7 +195,7 @@ export default function ServicesPage() {
                 width={1400}
                 height={933}
                 priority
-                className="h-auto w-full select-none"
+                className="img-fade-hero h-auto w-full select-none"
               />
             </div>
           </div>
@@ -256,7 +256,7 @@ export default function ServicesPage() {
                 alt="اکوسیستم خدمات TAJ HUB — گوشی سه‌بعدی طلایی با کارت‌های خدمات متصل"
                 width={1280}
                 height={853}
-                className="h-auto w-full"
+                className="img-fade h-auto w-full"
               />
             </div>
 

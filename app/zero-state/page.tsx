@@ -240,7 +240,7 @@ export default function ZeroStatePage() {
                 width={1400}
                 height={933}
                 priority
-                className="h-auto w-full select-none"
+                className="img-fade-hero h-auto w-full select-none"
               />
             </div>
           </div>
@@ -294,7 +294,7 @@ export default function ZeroStatePage() {
                   گزارش وضعیت صفر ساختمان
                 </h2>
                 <p className="mt-3 leading-relaxed text-muted-foreground">
-                  پس از تکمیل ارزیابی ۱۶ فصل، گزارش جامعی شامل وضعیت ساختمان، ریسک‌ها، اولویت تعمیرات، برنامه نگهداری پیشگیرانه (PM) و پیشنهادهای اجرایی ارائه می‌شود.
+                  پس از تکمیل ارزیابی ۱۶ فصل، گزارش جامعی شامل وضعیت ساختمان، ریسک‌ها، اولویت تعمیرات، برنامه نگهداری پیشگیرانه (PM) و ��یشنهادهای اجرایی ارائه می‌شود.
                 </p>
                 <ul className="mt-5 flex flex-wrap gap-x-6 gap-y-2 text-sm text-muted-foreground">
                   <li className="flex items-center gap-2">
