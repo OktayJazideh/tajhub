@@ -223,13 +223,13 @@ export default function ZeroStatePage() {
           </div>
 
           <Reveal delay={120}>
-            <div className="image-fade image-hover-wrap relative">
+            <div className="hero-image-fade image-hover-wrap">
               <Image
                 src="/zero-state-meeting.jpg"
                 alt="جلسه تیم TAJ HUB با ارائه وضعیت صفر ساختمان روی صفحه‌نمایش"
                 width={1280}
                 height={853}
-                className="h-full w-full object-cover"
+                className="h-auto w-full"
                 priority
               />
             </div>
