@@ -140,49 +140,65 @@ export default function ServicesPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden border-b border-gold/10 pt-32 lg:pt-40">
+      <section className="relative overflow-x-clip">
         <div
           aria-hidden
-          className="pointer-events-none absolute right-1/4 top-10 h-[420px] w-[760px] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,oklch(0.8_0.14_80/0.1),transparent_70%)] blur-3xl"
+          className="pointer-events-none absolute right-0 top-0 h-[700px] w-[700px] translate-x-1/3 rounded-full bg-[radial-gradient(circle,oklch(0.8_0.14_80/0.16),transparent_70%)] blur-2xl"
         />
-        <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-6 pb-20 lg:grid-cols-2 lg:px-10">
-          <div>
+        <div className="mx-auto grid min-h-screen max-w-7xl items-center gap-10 px-6 pb-24 pt-32 lg:grid-cols-[1fr_1.15fr] lg:px-10 lg:pt-28">
+          {/* Text column */}
+          <div className="order-2 flex flex-col items-start lg:order-1">
             <Reveal>
               <nav className="mb-6 flex items-center gap-2 text-xs text-muted-foreground">
-                <Link href="/" className="transition-colors hover:text-gold">
-                  صفحه اصلی
-                </Link>
+                <Link href="/" className="transition-colors hover:text-gold">صفحه اصلی</Link>
                 <span className="text-gold/40">/</span>
                 <span className="text-gold">خدمات</span>
               </nav>
             </Reveal>
+            <Reveal delay={30}>
+              <span className="rounded-full border border-gold/25 px-4 py-1.5 text-xs tracking-widest text-gold">
+                اکوسیستم مدیریت ساختمان‌های لوکس
+              </span>
+            </Reveal>
             <Reveal delay={80}>
-              <h1 className="text-balance text-4xl font-bold leading-tight sm:text-5xl">
+              <h1 className="mt-7 text-balance text-4xl font-bold leading-[1.25] sm:text-5xl lg:text-6xl">
                 خدمات <span className="text-gold-gradient">TAJ HUB</span>
-                <span className="mt-3 block text-2xl font-semibold text-gold-soft sm:text-3xl">
+                <span className="mt-2 block text-2xl font-semibold text-gold-soft sm:text-3xl">
                   تمام خدمات مدیریت ساختمان، در یک اکوسیستم هوشمند.
                 </span>
               </h1>
             </Reveal>
             <Reveal delay={160}>
-              <p className="mt-6 max-w-md leading-relaxed text-muted-foreground">
+              <p className="mt-6 max-w-lg leading-relaxed text-muted-foreground">
                 از وضعیت صفر و نگهداری پیشگیرانه تا مدیریت ساکنان، تجهیزات، مالی و گزارش‌های مدیریتی؛ همه در یک سیستم یکپارچه.
               </p>
             </Reveal>
+            <Reveal delay={260}>
+              <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+                <Link
+                  href="/contact"
+                  className="group inline-flex items-center justify-center gap-2 rounded-md bg-gradient-to-l from-[oklch(0.62_0.1_68)] to-[oklch(0.85_0.1_85)] px-7 py-3.5 text-sm font-semibold text-[oklch(0.14_0.01_60)] shadow-[0_0_30px_-8px_oklch(0.8_0.14_80)] transition-all duration-300 hover:shadow-[0_0_38px_-4px_oklch(0.8_0.14_80)]"
+                >
+                  <ArrowLeft className="h-4 w-4 transition-transform duration-300 group-hover:-translate-x-1" />
+                  درخواست جلسه معرفی
+                </Link>
+              </div>
+            </Reveal>
           </div>
 
-          <Reveal delay={120}>
-            <div className="hero-image-fade image-hover-wrap">
+          {/* Image column — bleeds off the left edge (RTL) */}
+          <div className="relative order-1 lg:order-2 lg:-ml-[max(0px,calc((100vw-80rem)/2))] lg:overflow-visible">
+            <div className="hero-image-fade image-hover-wrap w-full">
               <Image
                 src="/services-infographic.jpg"
                 alt="اینفوگرافیک TAJ HUB — از مدیریت سنتی تا هوشمندی پیشرو"
-                width={1280}
-                height={853}
-                className="h-auto w-full"
+                width={1400}
+                height={933}
                 priority
+                className="h-auto w-full select-none"
               />
             </div>
-          </Reveal>
+          </div>
         </div>
       </section>
 
