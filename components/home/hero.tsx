@@ -4,14 +4,14 @@ import { ArrowLeft, Play, MouseIcon } from 'lucide-react'
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden">
+    <section className="relative overflow-x-clip">
       {/* ambient glow */}
       <div
         aria-hidden
         className="pointer-events-none absolute right-0 top-0 h-[700px] w-[700px] translate-x-1/3 rounded-full bg-[radial-gradient(circle,oklch(0.8_0.14_80/0.16),transparent_70%)] blur-2xl"
       />
 
-      <div className="mx-auto grid min-h-screen max-w-7xl items-center gap-10 px-6 pb-24 pt-32 lg:grid-cols-2 lg:px-10 lg:pt-28">
+      <div className="mx-auto grid min-h-screen max-w-7xl items-center gap-10 px-6 pb-24 pt-32 lg:grid-cols-[1fr_1.15fr] lg:px-10 lg:pt-28">
         {/* Text column */}
         <div className="order-2 flex flex-col items-start lg:order-1">
           <span className="animate-fade-up rounded-full border border-gold/25 px-4 py-1.5 text-xs tracking-widest text-gold">
@@ -63,16 +63,16 @@ export function Hero() {
           </div>
         </div>
 
-        {/* Image column */}
-        <div className="relative order-1 flex justify-center lg:order-2">
-          <div className="image-fade image-hover-wrap w-full max-w-[580px]">
+        {/* Image column — bleeds off the left edge (RTL layout) */}
+        <div className="relative order-1 lg:order-2 lg:-ml-[max(0px,calc((100vw-80rem)/2))] lg:overflow-visible">
+          <div className="hero-image-fade image-hover-wrap w-full">
             <Image
               src="/hero-dashboard.jpg"
               alt="مدیر ساختمان در اتاق کار لوکس با داشبورد TAJ HUB"
-              width={1280}
-              height={853}
+              width={1400}
+              height={933}
               priority
-              className="h-auto w-full select-none rounded-2xl"
+              className="h-auto w-full select-none"
             />
           </div>
         </div>

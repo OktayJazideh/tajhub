@@ -339,4 +339,39 @@
     border: none !important;
     border-radius: 0 !important;
   }
+
+  /*
+   * Hero-specific fade.
+   * An asymmetric radial gradient: center pulled to the right (70% 50%) so the
+   * RIGHT side stays fully opaque (image bleeds off-screen) while the LEFT,
+   * TOP and BOTTOM dissolve softly into the background.
+   */
+  .hero-image-fade {
+    position: relative;
+    border: none !important;
+    border-radius: 0 !important;
+    overflow: visible !important;
+    /* Center pulled LEFT (32%) so the left edge bleeds open, right/top/bottom fade */
+    -webkit-mask-image: radial-gradient(
+      ellipse 105% 80% at 32% 50%,
+      #000 35%,
+      rgba(0, 0, 0, 0.85) 52%,
+      rgba(0, 0, 0, 0.35) 70%,
+      transparent 88%
+    );
+    mask-image: radial-gradient(
+      ellipse 105% 80% at 32% 50%,
+      #000 35%,
+      rgba(0, 0, 0, 0.85) 52%,
+      rgba(0, 0, 0, 0.35) 70%,
+      transparent 88%
+    );
+  }
+
+  .hero-image-fade img {
+    width: 100%;
+    height: auto;
+    border: none !important;
+    border-radius: 0 !important;
+  }
 }
