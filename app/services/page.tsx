@@ -174,8 +174,8 @@ export default function ServicesPage() {
           <Reveal delay={120}>
             <div className="image-fade image-hover-wrap relative">
               <Image
-                src="/services-ecosystem.jpg"
-                alt="اکوسیستم خدمات TAJ HUB — گوشی سه‌بعدی طلایی با کارت‌های خدمات متصل"
+                src="/services-infographic.jpg"
+                alt="اینفوگرافیک TAJ HUB — از مدیریت سنتی تا هوشمندی پیشرو"
                 width={1280}
                 height={853}
                 className="h-auto w-full object-contain"
@@ -236,8 +236,8 @@ export default function ServicesPage() {
           <div className="grid items-center gap-10 overflow-hidden rounded-2xl border border-gold/15 bg-card/40 p-8 lg:grid-cols-2 lg:p-12">
             <div className="image-fade image-hover-wrap relative order-2 rounded-xl lg:order-1">
               <Image
-                src="/services-infographic.jpg"
-                alt="اینفوگرافیک TAJ HUB — از مدیریت سنتی تا هوشمندی پیشرو"
+                src="/services-ecosystem.jpg"
+                alt="اکوسیستم خدمات TAJ HUB — گوشی سه‌بعدی طلایی با کارت‌های خدمات متصل"
                 width={1280}
                 height={853}
                 className="h-auto w-full object-contain"
