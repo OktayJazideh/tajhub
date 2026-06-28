@@ -225,16 +225,12 @@ export default function ZeroStatePage() {
           <Reveal delay={120}>
             <div className="image-fade image-hover-wrap relative overflow-hidden rounded-2xl border border-gold/15">
               <Image
-                src="/zero-state-building.png"
-                alt="ورودی لوکس ساختمان با کره سیاه براق روی حلقه‌های نور طلایی"
-                width={1024}
-                height={1024}
+                src="/zero-state-meeting.jpg"
+                alt="جلسه تیم TAJ HUB با ارائه وضعیت صفر ساختمان روی صفحه‌نمایش"
+                width={1280}
+                height={853}
                 className="h-full w-full object-cover"
                 priority
-              />
-              <div
-                aria-hidden
-                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-background/30"
               />
             </div>
           </Reveal>

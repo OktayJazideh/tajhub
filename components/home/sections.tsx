@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import {
   BrainCircuit,
@@ -122,7 +123,19 @@ export function EcosystemSection() {
           ))}
         </div>
 
-        <Reveal className="mt-14 text-center" delay={120}>
+        <Reveal className="mt-16" delay={100}>
+          <div className="image-fade image-hover-wrap mx-auto max-w-2xl">
+            <Image
+              src="/ecosystem-phone.jpg"
+              alt="اکوسیستم TAJ HUB — برج طلایی روی گوشی هوشمند با آیکون‌های متصل"
+              width={1280}
+              height={853}
+              className="h-auto w-full select-none"
+            />
+          </div>
+        </Reveal>
+
+        <Reveal className="mt-10 text-center" delay={80}>
           <p className="mx-auto max-w-lg text-sm leading-relaxed text-muted-foreground">
             همه این ماژول‌ها در کنار یکدیگر، تصویری کامل از ساختمان شما ایجاد می‌کنند.
           </p>
@@ -224,6 +237,18 @@ export function LegacySection() {
           <p className="mx-auto mt-6 max-w-xl text-lg font-semibold leading-relaxed text-gold-soft">
             ساختمان‌های لوکس، به مدیریت لوکس نیاز دارند.
           </p>
+        </Reveal>
+
+        <Reveal delay={340} className="mt-16">
+          <div className="image-fade image-hover-wrap mx-auto max-w-sm">
+            <Image
+              src="/brand-cityscape.jpg"
+              alt="لوگو TAJ HUB با هاله طلایی و افق شهر"
+              width={800}
+              height={1067}
+              className="h-auto w-full select-none"
+            />
+          </div>
         </Reveal>
       </div>
     </section>

@@ -65,14 +65,14 @@ export function Hero() {
 
         {/* Image column */}
         <div className="relative order-1 flex justify-center lg:order-2">
-          <div className="image-fade image-hover-wrap w-full max-w-[520px]">
+          <div className="image-fade image-hover-wrap w-full max-w-[580px]">
             <Image
-              src="/hero-tower.png"
-              alt="برج نمادین تاج هاب با هاله طلایی"
-              width={680}
-              height={680}
+              src="/hero-dashboard.jpg"
+              alt="مدیر ساختمان در اتاق کار لوکس با داشبورد TAJ HUB"
+              width={1280}
+              height={853}
               priority
-              className="h-auto w-full select-none"
+              className="h-auto w-full select-none rounded-2xl"
             />
           </div>
         </div>
