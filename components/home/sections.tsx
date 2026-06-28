@@ -123,19 +123,7 @@ export function EcosystemSection() {
           ))}
         </div>
 
-        <Reveal className="mt-16" delay={100}>
-          <div className="image-fade image-hover-wrap mx-auto max-w-2xl">
-            <Image
-              src="/ecosystem-phone.jpg"
-              alt="اکوسیستم TAJ HUB — برج طلایی روی گوشی هوشمند با آیکون‌های متصل"
-              width={1280}
-              height={853}
-              className="h-auto w-full select-none"
-            />
-          </div>
-        </Reveal>
-
-        <Reveal className="mt-10 text-center" delay={80}>
+        <Reveal className="mt-14 text-center" delay={100}>
           <p className="mx-auto max-w-lg text-sm leading-relaxed text-muted-foreground">
             همه این ماژول‌ها در کنار یکدیگر، تصویری کامل از ساختمان شما ایجاد می‌کنند.
           </p>
