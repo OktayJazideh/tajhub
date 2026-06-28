@@ -234,7 +234,7 @@ export default function ServicesPage() {
       <section className="px-6 pb-20 lg:px-10">
         <Reveal className="mx-auto max-w-7xl">
           <div className="grid items-center gap-10 overflow-hidden rounded-2xl border border-gold/15 bg-card/40 p-8 lg:grid-cols-2 lg:p-12">
-            <div className="image-fade image-hover-wrap relative order-2 rounded-xl lg:order-1">
+            <div className="image-fade image-hover-wrap relative order-2 lg:order-1">
               <Image
                 src="/services-ecosystem.jpg"
                 alt="اکوسیستم خدمات TAJ HUB — گوشی سه‌بعدی طلایی با کارت‌های خدمات متصل"

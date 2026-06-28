@@ -305,23 +305,30 @@
   }
 
   /*
-   * Feathered image edges. A static radial mask makes the image dissolve
-   * softly into the background on all four sides, so the frame/border is
-   * never visible and you can't tell where the photo ends. No animation.
-   * Works on any background color (mask = transparency, not an overlay).
-   * Not used on logos.
+   * Feathered image edges.
+   * Uses a radial gradient mask so all four edges dissolve into the background.
+   * The visible core starts at 30% and is fully transparent by 88%, giving a
+   * wide, soft fade with no hard frame line anywhere.
+   * Rules: never put border / rounded / overflow-hidden on a .image-fade wrapper.
    */
   .image-fade {
     position: relative;
+    border: none !important;
+    border-radius: 0 !important;
+    overflow: visible !important;
     -webkit-mask-image: radial-gradient(
-      ellipse 80% 80% at 50% 50%,
-      #000 45%,
-      transparent 92%
+      ellipse 75% 75% at 50% 50%,
+      #000 28%,
+      rgba(0, 0, 0, 0.85) 45%,
+      rgba(0, 0, 0, 0.4) 65%,
+      transparent 88%
     );
     mask-image: radial-gradient(
-      ellipse 80% 80% at 50% 50%,
-      #000 45%,
-      transparent 92%
+      ellipse 75% 75% at 50% 50%,
+      #000 28%,
+      rgba(0, 0, 0, 0.85) 45%,
+      rgba(0, 0, 0, 0.4) 65%,
+      transparent 88%
     );
   }
 
@@ -329,5 +336,7 @@
   .image-fade > div {
     width: 100%;
     height: 100%;
+    border: none !important;
+    border-radius: 0 !important;
   }
 }
