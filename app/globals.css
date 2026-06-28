@@ -305,10 +305,10 @@
   }
 
   /*
-   * image-fade: a single inset box-shadow in the site background color paints
-   * over all four edges of the image — no mask, no pseudo-elements, no
-   * z-index fighting. The wrapper needs overflow:hidden so the shadow is
-   * clipped to the image bounds.
+   * image-fade: inset box-shadow in the site background color paints over
+   * all four edges. blur=120px gives a wide, soft transition. spread=20px
+   * pushes the solid color well inside the edge before it starts fading.
+   * overflow:hidden clips the shadow to the image bounds.
    */
   .image-fade {
     position: relative;
@@ -316,15 +316,16 @@
     border: none !important;
     border-radius: 0 !important;
     box-shadow:
-      inset 0   60px 60px -10px var(--background),
-      inset 0  -60px 60px -10px var(--background),
-      inset  60px 0  60px -10px var(--background),
-      inset -60px 0  60px -10px var(--background);
+      inset 0    120px 120px 20px var(--background),
+      inset 0   -120px 120px 20px var(--background),
+      inset  120px 0   120px 20px var(--background),
+      inset -120px 0   120px 20px var(--background);
   }
 
   /*
-   * hero-image-fade: asymmetric — LEFT side is fully open so the image
-   * bleeds off the viewport edge (RTL layout). Only right/top/bottom fade.
+   * hero-image-fade: same technique but asymmetric for RTL bleed layouts.
+   * LEFT side has no shadow so the image bleeds off the viewport naturally.
+   * Right / top / bottom get a stronger fade to dissolve into the page.
    */
   .hero-image-fade {
     position: relative;
@@ -332,8 +333,8 @@
     border: none !important;
     border-radius: 0 !important;
     box-shadow:
-      inset 0   80px 80px -10px var(--background),
-      inset 0  -80px 80px -10px var(--background),
-      inset -80px 0  80px -10px var(--background);
+      inset 0    140px 140px 30px var(--background),
+      inset 0   -140px 140px 30px var(--background),
+      inset -160px 0   160px 30px var(--background);
   }
 }
