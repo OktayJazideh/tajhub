@@ -303,28 +303,7 @@ export default function ServicesPage() {
         </Reveal>
       </section>
 
-      {/* Client trust strip */}
-      <section className="border-t border-gold/10 py-14">
-        <div className="mx-auto max-w-6xl px-6 lg:px-10">
-          <Reveal className="mb-8 text-center text-sm text-muted-foreground">
-            اعتماد مدیران حرفه‌ای ساختمان‌ها
-          </Reveal>
-          <Reveal
-            delay={80}
-            className="flex flex-wrap items-center justify-center gap-x-12 gap-y-6"
-          >
-            {clients.map((c) => (
-              <div
-                key={c}
-                className="flex items-center gap-2 text-gold-muted transition-colors duration-300 hover:text-gold"
-              >
-                <Building2 className="h-5 w-5" />
-                <span className="text-sm font-medium">{c}</span>
-              </div>
-            ))}
-          </Reveal>
-        </div>
-      </section>
+
     </>
   )
 }

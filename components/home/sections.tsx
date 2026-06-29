@@ -47,7 +47,7 @@ export function PillarsSection() {
         <Reveal className="mb-16 text-center">
           <span className="text-sm tracking-[0.3em] text-gold">اکوسیستم</span>
           <h2 className="mt-4 text-balance text-3xl font-bold sm:text-4xl">
-            چهار ستون سیستم‌عامل ساختمان‌های لوکس
+            چهار ستون سیستم‌جامع ساختمان‌های لوکس
           </h2>
           <p className="mx-auto mt-4 max-w-lg text-muted-foreground">
             هر تصمیم، هر سرویس و هر ماژول TAJ HUB بر پایه این چهار ستون طراحی شده است.
@@ -103,7 +103,7 @@ export function EcosystemSection() {
             <span className="text-gold-gradient">TAJ HUB</span>
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
-            تمام ماژول‌های موردنیاز برای مدیریت یکپارچه ساختمان، در یک سیستم‌عامل هوشمند گرد هم آمده‌اند.
+            تمام ماژول‌های موردنیاز برای مدیریت یکپارچه ساختمان، در یک سیستم‌جامع هوشمند گرد هم آمده‌اند.
           </p>
         </Reveal>
 
@@ -194,7 +194,7 @@ export function WhySection() {
       <Reveal className="mx-auto mt-20 max-w-4xl px-6 text-center lg:px-10">
         <div aria-hidden className="mx-auto mb-8 h-px w-16 gold-hairline" />
         <p className="text-balance text-2xl font-semibold leading-relaxed text-gold-soft sm:text-3xl">
-          ساختمان لوکس، تنها با نمای زیبا ساخته نمی‌شود؛ با مدیریت هوشمند ماندگار می‌شود.
+          لوکس بودن، حاصل طراحی و ساخت است؛ ماندگار ماندنِ آن، نتیجه مدیریت هوشمند است.
         </p>
       </Reveal>
     </section>
