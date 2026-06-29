@@ -194,7 +194,7 @@ export function WhySection() {
       <Reveal className="mx-auto mt-20 max-w-4xl px-6 text-center lg:px-10">
         <div aria-hidden className="mx-auto mb-8 h-px w-16 gold-hairline" />
         <p className="text-balance text-2xl font-semibold leading-relaxed text-gold-soft sm:text-3xl">
-          ساختمان لوکس، تنها با نمای زیبا ساخته نمی‌شود؛ با مدیریت هوشمند ماندگار می‌شود.
+          لوکس بودن، حاصل طراحی و ساخت است؛ ماندگار ماندنِ آن، نتیجه مدیریت هوشمند است.
         </p>
       </Reveal>
     </section>

@@ -64,8 +64,8 @@ export function StorySection() {
         <Reveal soft delay={320} className="mt-16">
           <div aria-hidden className="mx-auto mb-10 h-px w-24 gold-hairline" />
           <p className="text-balance text-3xl font-bold leading-[1.45] text-foreground sm:text-4xl lg:text-5xl">
-            اما کمتر ساختمانی
-            <span className="mt-2 block text-gold-gradient">حافظه دارد.</span>
+            اما بسیاری از ساختمان ها
+            <span className="mt-2 block text-gold-gradient">حافظه ندارند.</span>
           </p>
         </Reveal>
 
