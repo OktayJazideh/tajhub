@@ -127,21 +127,12 @@ export function SiteHeader() {
           {/* Dashboard login */}
           <button
             type="button"
-            className="group relative flex items-center gap-2 overflow-hidden rounded-md border border-gold/25 px-4 py-2 text-sm text-foreground/80 transition-all duration-300 hover:border-gold/55 hover:text-gold"
+            className="group flex items-center gap-2 rounded-md bg-gradient-to-l from-[oklch(0.62_0.1_68)] to-[oklch(0.85_0.1_85)] px-5 py-2 text-sm font-semibold text-[oklch(0.14_0.01_60)] shadow-[0_0_24px_-6px_oklch(0.8_0.14_80)] transition-all duration-300 hover:shadow-[0_0_30px_-4px_oklch(0.8_0.14_80)]"
             aria-label="ورود به داشبورد"
           >
-            <span className="absolute inset-0 -translate-x-full bg-gradient-to-l from-gold/8 to-transparent transition-transform duration-500 group-hover:translate-x-0" />
-            <LogIn className="relative h-4 w-4 transition-transform duration-300 group-hover:scale-110" />
-            <span className="relative">ورود به داشبورد</span>
+            <LogIn className="h-4 w-4 transition-transform duration-300 group-hover:scale-110" />
+            ورود به داشبورد
           </button>
-
-          <Link
-            href="/contact"
-            className="group flex items-center gap-2 rounded-md bg-gradient-to-l from-[oklch(0.62_0.1_68)] to-[oklch(0.85_0.1_85)] px-5 py-2 text-sm font-semibold text-[oklch(0.14_0.01_60)] shadow-[0_0_24px_-6px_oklch(0.8_0.14_80)] transition-all duration-300 hover:shadow-[0_0_30px_-4px_oklch(0.8_0.14_80)]"
-          >
-            <ArrowLeft className="h-4 w-4 transition-transform duration-300 group-hover:-translate-x-1" />
-            درخواست جلسه معرفی
-          </Link>
         </div>
 
         <button
@@ -191,17 +182,11 @@ export function SiteHeader() {
           </div>
           <button
             type="button"
-            className="mt-2 flex items-center gap-2 rounded-md border border-gold/25 px-3 py-3 text-sm text-foreground/90 transition-colors hover:border-gold/50 hover:text-gold"
+            className="mt-2 flex items-center justify-center gap-2 rounded-md bg-gradient-to-l from-[oklch(0.62_0.1_68)] to-[oklch(0.85_0.1_85)] px-3 py-3 text-sm font-semibold text-[oklch(0.14_0.01_60)]"
           >
             <LogIn className="h-4 w-4" />
             ورود به داشبورد
           </button>
-          <Link
-            href="/contact"
-            className="mt-1 flex items-center justify-center gap-2 rounded-md bg-gradient-to-l from-[oklch(0.62_0.1_68)] to-[oklch(0.85_0.1_85)] px-3 py-3 text-sm font-semibold text-[oklch(0.14_0.01_60)]"
-          >
-            درخواست جلسه معرفی
-          </Link>
         </nav>
       </div>
     </header>
