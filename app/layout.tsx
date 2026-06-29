@@ -27,7 +27,7 @@ const cormorant = Cormorant_Garamond({
 })
 
 export const metadata: Metadata = {
-  title: 'تاج هاب | سیستم‌عامل مدیریت ساختمان‌های لوکس',
+  title: 'تاج هاب | سیستم‌جامع مدیریت ساختمان‌های لوکس',
   description:
     'TAJ HUB — اکوسیستمی یکپارچه برای حفظ دانش، تجربه، تجهیزات و کیفیت زندگی در ساختمان‌های لوکس. آینده مدیریت ساختمان‌های لوکس.',
   generator: 'v0.app',

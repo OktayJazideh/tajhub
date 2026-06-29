@@ -47,7 +47,7 @@ export function PillarsSection() {
         <Reveal className="mb-16 text-center">
           <span className="text-sm tracking-[0.3em] text-gold">اکوسیستم</span>
           <h2 className="mt-4 text-balance text-3xl font-bold sm:text-4xl">
-            چهار ستون سیستم‌عامل ساختمان‌های لوکس
+            چهار ستون سیستم‌جامع ساختمان‌های لوکس
           </h2>
           <p className="mx-auto mt-4 max-w-lg text-muted-foreground">
             هر تصمیم، هر سرویس و هر ماژول TAJ HUB بر پایه این چهار ستون طراحی شده است.
@@ -103,7 +103,7 @@ export function EcosystemSection() {
             <span className="text-gold-gradient">TAJ HUB</span>
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
-            تمام ماژول‌های موردنیاز برای مدیریت یکپارچه ساختمان، در یک سیستم‌عامل هوشمند گرد هم آمده‌اند.
+            تمام ماژول‌های موردنیاز برای مدیریت یکپارچه ساختمان، در یک سیستم‌جامع هوشمند گرد هم آمده‌اند.
           </p>
         </Reveal>
 
