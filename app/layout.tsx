@@ -31,6 +31,9 @@ export const metadata: Metadata = {
   description:
     'TAJ HUB — اکوسیستمی یکپارچه برای حفظ دانش، تجربه، تجهیزات و کیفیت زندگی در ساختمان‌های لوکس. آینده مدیریت ساختمان‌های لوکس.',
   generator: 'v0.app',
+  icons: {
+    icon: '/favicon.png',
+  },
 }
 
 export const viewport: Viewport = {
