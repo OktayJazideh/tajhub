@@ -40,9 +40,9 @@ const pillars = [
 
 export function PillarsSection() {
   return (
-    <section className="relative border-t border-gold/10 py-28 lg:py-36">
+    <section className="relative border-t border-gold/10 py-16 lg:py-20">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
-        <Reveal className="mb-16 text-center">
+        <Reveal className="mb-10 text-center">
           <span className="text-sm tracking-[0.3em] text-gold">اکوسیستم</span>
           <h2 className="mt-4 text-balance text-3xl font-bold sm:text-4xl">
             چهار ستون سیستم‌جامع ساختمان‌های لوکس
@@ -88,14 +88,14 @@ export function EcosystemSection() {
   return (
     <section
       id="ecosystem"
-      className="relative scroll-mt-24 border-t border-gold/10 py-28 lg:py-36"
+      className="relative scroll-mt-24 border-t border-gold/10 py-16 lg:py-20"
     >
       <div
         aria-hidden
         className="pointer-events-none absolute left-1/2 top-1/2 h-[520px] w-[520px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,oklch(0.8_0.14_80/0.08),transparent_70%)] blur-2xl"
       />
       <div className="relative mx-auto max-w-7xl px-6 lg:px-10">
-        <Reveal className="mb-16 text-center">
+        <Reveal className="mb-10 text-center">
           <h2 className="text-balance text-3xl font-bold sm:text-4xl">
             اکوسیستم مدیریت ساختمان‌های لوکس{' '}
             <span className="text-gold-gradient">TAJ HUB</span>
@@ -121,7 +121,7 @@ export function EcosystemSection() {
           ))}
         </div>
 
-        <Reveal className="mt-14 text-center" delay={100}>
+        <Reveal className="mt-10 text-center" delay={100}>
           <p className="mx-auto max-w-lg text-sm leading-relaxed text-muted-foreground">
             همه این قابلیت‌ها در کنار یکدیگر، تصویری کامل از ساختمان شما ایجاد می‌کنند.
           </p>
@@ -152,8 +152,8 @@ const reasons = [
 
 export function WhySection() {
   return (
-    <section className="relative border-t border-gold/10 py-28 lg:py-36">
-      <div className="mx-auto grid max-w-7xl items-start gap-16 px-6 lg:grid-cols-2 lg:px-10">
+    <section className="relative border-t border-gold/10 py-16 lg:py-20">
+      <div className="mx-auto grid max-w-7xl items-start gap-12 px-6 lg:grid-cols-2 lg:px-10">
         <Reveal>
           <span className="text-sm tracking-[0.3em] text-gold">چرا تاج هاب</span>
           <h2 className="mt-4 text-balance text-3xl font-bold leading-snug sm:text-4xl">
@@ -202,7 +202,7 @@ export function WhySection() {
 /* ---------- Section 6: Legacy ---------- */
 export function LegacySection() {
   return (
-    <section className="relative border-t border-gold/10 py-28 lg:py-36">
+    <section className="relative border-t border-gold/10 py-16 lg:py-20">
       <div className="mx-auto max-w-4xl px-6 text-center lg:px-10">
         <Reveal delay={100}>
           <h2 className="mt-8 text-balance text-3xl font-bold leading-[1.4] sm:text-4xl">
@@ -233,7 +233,7 @@ export function LegacySection() {
 /* ---------- Closing CTA ---------- */
 export function ClosingCta() {
   return (
-    <section className="relative overflow-hidden border-t border-gold/10 py-28 lg:py-40">
+    <section className="relative overflow-hidden border-t border-gold/10 py-16 lg:py-24">
       <div
         aria-hidden
         className="pointer-events-none absolute inset-x-0 bottom-0 mx-auto h-[420px] w-[820px] rounded-full bg-[radial-gradient(circle,oklch(0.8_0.14_80/0.12),transparent_70%)] blur-3xl"
