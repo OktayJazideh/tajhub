@@ -25,7 +25,9 @@ export function Logo({
         width={showTagline ? 400 : 280}
         height={showTagline ? 160 : 80}
         className="h-auto w-auto object-contain transition-opacity duration-500 group-hover:opacity-85"
-        style={{ height: showTagline ? '20rem' : '50px' }}
+        style={{ 
+          height: showTagline ? '20rem' : 'clamp(55px, 12vw, 65px)'
+        }}
         priority
       />
     </Link>
