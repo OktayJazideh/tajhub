@@ -11,7 +11,6 @@ import {
   Wrench,
   ClipboardList,
   LayoutDashboard,
-  CircleDot,
 } from 'lucide-react'
 import { Reveal } from '@/components/reveal'
 
@@ -215,15 +214,6 @@ export function LegacySection() {
             مدیریت ساختمان یعنی حفظ سرمایه، ثبت دانش، افزایش طول عمر تجهیزات و خلق تجربه‌ای ماندگار برای ساکنان؛ امروز، فردا و سال‌های آینده.
           </p>
         </Reveal>
-        <Reveal delay={260}>
-          <div className="mx-auto mt-6 max-w-xl text-center">
-            <CircleDot className="mx-auto mb-4 h-7 w-7 text-gold/70" />
-            <p className="text-lg font-semibold leading-relaxed text-gold-soft">
-              یک ساختمان لوکس،شایسته یک مدیریت لوکس است.
-            </p>
-          </div>
-        </Reveal>
-
         <Reveal delay={340} className="mt-16">
           <div className="image-fade image-hover-wrap mx-auto max-w-sm">
             <Image
