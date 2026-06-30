@@ -210,7 +210,7 @@ export default function ZeroStatePage() {
                     key={h.title}
                     className="group flex flex-col items-center gap-3 rounded-xl border border-gold/12 bg-card/40 p-4 text-center transition-all duration-500 hover:border-gold/35 hover:bg-card"
                   >
-                    <span className="flex h-11 w-11 items-center justify-center rounded-lg border border-gold/20 text-gold transition-all duration-500 group-hover:shadow-[0_0_22px_-8px_oklch(0.8_0.14_80)]">
+                    <span className="flex h-11 w-11 items-center justify-center rounded-lg border border-gold/20 text-foreground transition-all duration-500 group-hover:shadow-[0_0_22px_-8px_oklch(0.8_0.14_80)]">
                       <h.icon className="h-5 w-5" />
                     </span>
                     <span className="text-xs leading-relaxed text-muted-foreground">{h.title}</span>
@@ -265,7 +265,7 @@ export default function ZeroStatePage() {
                   <span className="absolute left-4 top-4 text-sm font-medium text-muted-foreground/35">
                     {i + 1}
                   </span>
-                  <span className="flex h-14 w-14 items-center justify-center rounded-xl text-muted-foreground/50 transition-colors duration-500 group-hover:text-gold-soft">
+                  <span className="flex h-14 w-14 items-center justify-center rounded-xl text-foreground transition-colors duration-500 group-hover:text-gold-soft">
                     <c.icon className="h-7 w-7" />
                   </span>
                   <h3 className="mt-5 text-base font-semibold text-gold-soft">
@@ -286,7 +286,7 @@ export default function ZeroStatePage() {
         <Reveal className="mx-auto max-w-6xl">
           <div className="grid items-center gap-10 overflow-hidden rounded-2xl border border-gold/15 bg-card/40 p-8 lg:grid-cols-2 lg:p-12">
             <div className="flex items-start gap-5">
-              <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-xl border border-gold/20 bg-gold/5 text-gold">
+              <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-xl border border-gold/20 bg-gold/5 text-foreground">
                 <BookOpen className="h-8 w-8" />
               </span>
               <div>
