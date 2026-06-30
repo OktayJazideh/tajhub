@@ -265,7 +265,7 @@ export default function ZeroStatePage() {
                   <span className="absolute left-4 top-4 text-sm font-medium text-muted-foreground/35">
                     {i + 1}
                   </span>
-                  <span className="flex h-14 w-14 items-center justify-center rounded-xl border border-gold/20 bg-gold/5 text-gold transition-all duration-500 group-hover:shadow-[0_0_28px_-8px_oklch(0.8_0.14_80)]">
+                  <span className="flex h-14 w-14 items-center justify-center rounded-xl text-muted-foreground/50 transition-colors duration-500 group-hover:text-gold-soft">
                     <c.icon className="h-7 w-7" />
                   </span>
                   <h3 className="mt-5 text-base font-semibold text-gold-soft">
