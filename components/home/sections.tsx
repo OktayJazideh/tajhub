@@ -216,9 +216,12 @@ export function LegacySection() {
           </p>
         </Reveal>
         <Reveal delay={260}>
-          <p className="mx-auto mt-6 max-w-xl text-lg font-semibold leading-relaxed text-gold-soft">
-            ساختمان‌های لوکس، به مدیریت لوکس نیاز دارند.
-          </p>
+          <div className="mx-auto mt-6 max-w-xl text-center">
+            <CircleDot className="mx-auto mb-4 h-7 w-7 text-gold/70" />
+            <p className="text-lg font-semibold leading-relaxed text-gold-soft">
+              یک ساختمان لوکس،شایسته یک مدیریت لوکس است.
+            </p>
+          </div>
         </Reveal>
 
         <Reveal delay={340} className="mt-16">
@@ -246,14 +249,8 @@ export function ClosingCta() {
         className="pointer-events-none absolute inset-x-0 bottom-0 mx-auto h-[420px] w-[820px] rounded-full bg-[radial-gradient(circle,oklch(0.8_0.14_80/0.12),transparent_70%)] blur-3xl"
       />
       <div className="relative mx-auto flex max-w-3xl flex-col items-center px-6 text-center lg:px-10">
-        <Reveal>
-          <CircleDot className="h-7 w-7 text-gold/70" />
-        </Reveal>
         <Reveal delay={100}>
-          <p className="text-sm font-medium tracking-[0.2em] text-gold-soft">
-            ساختمان‌های لوکس، به مدیریت لوکس نیاز دارند.
-          </p>
-          <h2 className="mt-6 text-balance text-3xl font-bold leading-snug sm:text-4xl lg:text-5xl">
+          <h2 className="text-balance text-3xl font-bold leading-snug sm:text-4xl lg:text-5xl">
             اگر ساختمانتان لوکس است،
             <span className="mt-2 block text-gold-gradient">
               مدیریت آن نیز باید در همان سطح باشد.
