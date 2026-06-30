@@ -7,7 +7,6 @@ import {
   Users,
   ArrowLeft,
   Check,
-  Building2,
   Wallet,
   Wrench,
   ClipboardList,
@@ -206,11 +205,6 @@ export function LegacySection() {
   return (
     <section className="relative border-t border-gold/10 py-28 lg:py-36">
       <div className="mx-auto max-w-4xl px-6 text-center lg:px-10">
-        <Reveal>
-          <span className="mx-auto flex h-12 w-12 items-center justify-center rounded-md border border-gold/20 text-gold">
-            <Building2 className="h-6 w-6" />
-          </span>
-        </Reveal>
         <Reveal delay={100}>
           <h2 className="mt-8 text-balance text-3xl font-bold leading-[1.4] sm:text-4xl">
             مدیریت ساختمان، فقط اداره امور روزمره نیست.
