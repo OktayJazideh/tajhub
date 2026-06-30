@@ -214,12 +214,7 @@ export function LegacySection() {
             مدیریت ساختمان یعنی حفظ سرمایه، ثبت دانش، افزایش طول عمر تجهیزات و خلق تجربه‌ای ماندگار برای ساکنان؛ امروز، فردا و سال‌های آینده.
           </p>
         </Reveal>
-        <Reveal delay={260}>
-          <p className="mx-auto mt-8 max-w-xl text-center text-lg font-semibold leading-relaxed text-gold-soft">
-            اگر ساختمانتان لوکس است،مدیریت آن نیز باید در همان سطح باشد.
-          </p>
-        </Reveal>
-        <Reveal delay={340} className="mt-16">
+        <Reveal delay={260} className="mt-16">
           <div className="image-fade image-hover-wrap mx-auto max-w-sm">
             <Image
               src="/brand-cityscape.jpg"
