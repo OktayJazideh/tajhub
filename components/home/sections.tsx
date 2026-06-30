@@ -241,9 +241,9 @@ export function ClosingCta() {
       <div className="relative mx-auto flex max-w-3xl flex-col items-center px-6 text-center lg:px-10">
         <Reveal delay={100}>
           <h2 className="text-balance text-3xl font-bold leading-snug sm:text-4xl lg:text-5xl">
-            اگر ساختمانتان لوکس است،
+            یک ساختمان لوکس،
             <span className="mt-2 block text-gold-gradient">
-              مدیریت آن نیز باید در همان سطح باشد.
+              شایسته یک مدیریت لوکس است.
             </span>
           </h2>
         </Reveal>
