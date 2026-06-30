@@ -4,11 +4,11 @@ import { ArrowLeft, Play, MouseIcon } from 'lucide-react'
 
 export function Hero() {
   return (
-    <section className="relative overflow-x-clip">
+    <section className="relative overflow-hidden">
       {/* ambient glow */}
       <div
         aria-hidden
-        className="pointer-events-none absolute right-0 top-0 h-[700px] w-[700px] translate-x-1/3 rounded-full bg-[radial-gradient(circle,oklch(0.8_0.14_80/0.16),transparent_70%)] blur-2xl"
+        className="pointer-events-none absolute right-0 top-0 h-[700px] w-[700px] translate-x-1/2 rounded-full bg-[radial-gradient(circle,oklch(0.8_0.14_80/0.16),transparent_70%)] blur-2xl"
       />
 
       <div className="mx-auto grid min-h-screen max-w-7xl items-center gap-10 px-6 pb-24 pt-32 lg:grid-cols-[1fr_1.15fr] lg:px-10 lg:pt-28">
