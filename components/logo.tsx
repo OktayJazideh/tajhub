@@ -20,12 +20,14 @@ export function Logo({
       aria-label="تاج هاب - صفحه اصلی"
     >
       <Image
-        src="/logo.png"
+        src={showTagline ? '/logo.png' : '/logo-navbar.png'}
         alt="TAJ HUB — Building Management Intelligence"
-        width={showTagline ? 400 : 240}
-        height={showTagline ? 160 : 120}
+        width={showTagline ? 400 : 280}
+        height={showTagline ? 160 : 80}
         className="h-auto w-auto object-contain transition-opacity duration-500 group-hover:opacity-85"
-        style={{ height: showTagline ? '20rem' : '120px' }}
+        style={{ 
+          height: showTagline ? '20rem' : 'clamp(55px, 12vw, 65px)'
+        }}
         priority
       />
     </Link>

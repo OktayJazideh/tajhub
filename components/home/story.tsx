@@ -31,7 +31,7 @@ export function StorySection() {
       />
 
       {/* ── ACT 1: لوکس ماندن یک فرآیند است ── */}
-      <div className="relative mx-auto max-w-3xl px-6 py-36 text-center lg:px-10 lg:py-52">
+      <div className="relative mx-auto max-w-3xl px-6 py-20 text-center lg:px-10 lg:py-28">
         <div
           aria-hidden
           className="pointer-events-none absolute left-1/2 top-1/3 h-[400px] w-[400px] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,oklch(0.8_0.14_80/0.07),transparent_70%)] blur-3xl"
@@ -89,7 +89,7 @@ export function StorySection() {
           aria-hidden
           className="pointer-events-none absolute left-1/2 top-1/2 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,oklch(0.8_0.14_80/0.06),transparent_70%)] blur-3xl"
         />
-        <div className="relative mx-auto max-w-3xl px-6 py-36 text-center lg:px-10 lg:py-52">
+        <div className="relative mx-auto max-w-3xl px-6 py-20 text-center lg:px-10 lg:py-28">
 
           {/* Luxury durability */}
           <Reveal soft>
@@ -133,7 +133,7 @@ export function StorySection() {
           aria-hidden
           className="pointer-events-none absolute left-1/2 top-1/2 h-[480px] w-[480px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,oklch(0.8_0.14_80/0.07),transparent_70%)] blur-3xl"
         />
-        <div className="relative mx-auto max-w-4xl px-6 py-36 text-center lg:px-10 lg:py-48">
+        <div className="relative mx-auto max-w-4xl px-6 py-20 text-center lg:px-10 lg:py-28">
 
           <Reveal soft>
             <span className="text-xs tracking-[0.4em] text-gold/80">مرکز فرماندهی</span>
