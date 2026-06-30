@@ -1,17 +1,47 @@
 'use client'
 
 import { useState, type FormEvent } from 'react'
-import { ArrowLeft, Check } from 'lucide-react'
+import { ArrowLeft, Check, Loader2 } from 'lucide-react'
 
 const fieldClass =
   'w-full rounded-md border border-gold/15 bg-card/40 px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/60 outline-none transition-all duration-300 focus:border-gold/50 focus:bg-card focus:shadow-[0_0_0_3px_oklch(0.8_0.14_80/0.08)]'
 
+const CONTACT_API =
+  process.env.NEXT_PUBLIC_CONTACT_API_URL ?? '/api/send-contact.php'
+
 export function ContactForm() {
   const [sent, setSent] = useState(false)
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState<string | null>(null)
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault()
-    setSent(true)
+    setError(null)
+    setLoading(true)
+
+    const form = e.currentTarget
+    const data = new FormData(form)
+
+    try {
+      const res = await fetch(CONTACT_API, {
+        method: 'POST',
+        body: data,
+      })
+
+      const json = (await res.json()) as { ok: boolean; message: string }
+
+      if (!res.ok || !json.ok) {
+        setError(json.message || 'ارسال ناموفق بود. لطفاً دوباره تلاش کنید.')
+        return
+      }
+
+      setSent(true)
+      form.reset()
+    } catch {
+      setError('اتصال برقرار نشد. لطفاً دوباره تلاش کنید یا مستقیماً با ما تماس بگیرید.')
+    } finally {
+      setLoading(false)
+    }
   }
 
   if (sent) {
@@ -43,6 +73,12 @@ export function ContactForm() {
       onSubmit={handleSubmit}
       className="flex flex-col gap-5 rounded-xl border border-gold/12 bg-card/30 p-8"
     >
+      {/* Honeypot — hidden from users, bots fill it */}
+      <div className="absolute -left-[9999px] h-0 w-0 overflow-hidden" aria-hidden>
+        <label htmlFor="website">Website</label>
+        <input id="website" name="website" type="text" tabIndex={-1} autoComplete="off" />
+      </div>
+
       <div className="grid gap-5 sm:grid-cols-2">
         <div className="flex flex-col gap-2">
           <label htmlFor="name" className="text-sm text-foreground/80">
@@ -52,6 +88,7 @@ export function ContactForm() {
             id="name"
             name="name"
             required
+            disabled={loading}
             placeholder="نام شما"
             className={fieldClass}
           />
@@ -65,6 +102,7 @@ export function ContactForm() {
             name="phone"
             type="tel"
             required
+            disabled={loading}
             placeholder="۰۹xxxxxxxxx"
             className={fieldClass}
           />
@@ -80,6 +118,7 @@ export function ContactForm() {
             id="email"
             name="email"
             type="email"
+            disabled={loading}
             placeholder="email@example.com"
             className={fieldClass}
           />
@@ -91,6 +130,7 @@ export function ContactForm() {
           <input
             id="building"
             name="building"
+            disabled={loading}
             placeholder="نام پروژه"
             className={fieldClass}
           />
@@ -105,17 +145,29 @@ export function ContactForm() {
           id="message"
           name="message"
           rows={5}
+          disabled={loading}
           placeholder="درخواست یا توضیحات خود را بنویسید..."
           className={`${fieldClass} resize-none`}
         />
       </div>
 
+      {error && (
+        <p className="rounded-md border border-destructive/30 bg-destructive/10 px-4 py-3 text-sm text-destructive">
+          {error}
+        </p>
+      )}
+
       <button
         type="submit"
-        className="group mt-2 inline-flex items-center justify-center gap-2 rounded-md bg-gradient-to-l from-[oklch(0.62_0.1_68)] to-[oklch(0.85_0.1_85)] px-7 py-3.5 text-sm font-semibold text-[oklch(0.14_0.01_60)] shadow-[0_0_28px_-8px_oklch(0.8_0.14_80)] transition-all duration-300 hover:shadow-[0_0_38px_-4px_oklch(0.8_0.14_80)]"
+        disabled={loading}
+        className="group mt-2 inline-flex items-center justify-center gap-2 rounded-md bg-gradient-to-l from-[oklch(0.62_0.1_68)] to-[oklch(0.85_0.1_85)] px-7 py-3.5 text-sm font-semibold text-[oklch(0.14_0.01_60)] shadow-[0_0_28px_-8px_oklch(0.8_0.14_80)] transition-all duration-300 hover:shadow-[0_0_38px_-4px_oklch(0.8_0.14_80)] disabled:cursor-not-allowed disabled:opacity-60"
       >
-        <ArrowLeft className="h-4 w-4 transition-transform duration-300 group-hover:-translate-x-1" />
-        ثبت درخواست جلسه معرفی
+        {loading ? (
+          <Loader2 className="h-4 w-4 animate-spin" />
+        ) : (
+          <ArrowLeft className="h-4 w-4 transition-transform duration-300 group-hover:-translate-x-1" />
+        )}
+        {loading ? 'در حال ارسال…' : 'ثبت درخواست جلسه معرفی'}
       </button>
     </form>
   )
