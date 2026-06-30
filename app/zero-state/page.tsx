@@ -137,7 +137,7 @@ const chapters = [
   {
     icon: BarChart3,
     title: 'تحلیل، گزارش و برنامه‌ریزی',
-    text: 'تحلیل داده‌ها، شاخص‌ها و برنامه نگهداری و بهبود',
+    text: 'تحلیل و بررسی، شاخص‌های عملکرد و برنامه نگهداری و بهبود',
   },
 ]
 
@@ -294,7 +294,7 @@ export default function ZeroStatePage() {
                   گزارش وضعیت صفر ساختمان
                 </h2>
                 <p className="mt-3 leading-relaxed text-muted-foreground">
-                  پس از تکمیل ارزیابی ۱۶ فصل، گزارش جامعی شامل وضعیت ساختمان، ریسک‌ها، اولویت تعمیرات، برنامه نگهداری پیشگیرانه (PM) و یشنهادهای اجرایی ارائه می‌شود.
+                  پس از تکمیل ارزیابی ۱۶ فصل، گزارش جامعی شامل وضعیت ساختمان، ریسک‌ها، اولویت تعمیرات، برنامه نگهداری پیش��یرانه (PM) و یشنهادهای اجرایی ارائه می‌شود.
                 </p>
                 <ul className="mt-5 flex flex-wrap gap-x-6 gap-y-2 text-sm text-muted-foreground">
                   <li className="flex items-center gap-2">

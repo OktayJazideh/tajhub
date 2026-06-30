@@ -50,7 +50,7 @@ export function PillarsSection() {
             چهار ستون سیستم‌جامع ساختمان‌های لوکس
           </h2>
           <p className="mx-auto mt-4 max-w-lg text-muted-foreground">
-            هر تصمیم، هر سرویس و هر ماژول TAJ HUB بر پایه این چهار ستون طراحی شده است.
+            هر تصمیم، هر سرویس و هر قابلیت TAJ HUB بر پایه این چهار ستون طراحی شده است.
           </p>
         </Reveal>
 
@@ -83,7 +83,7 @@ const modules = [
   { icon: Wrench, label: 'مدیریت تجهیزات', desc: 'شناسنامه و چرخه عمر دارایی‌ها.' },
   { icon: Wallet, label: 'مدیریت مالی', desc: 'شفافیت کامل درآمدها و هزینه‌ها.' },
   { icon: Users, label: 'مدیریت ساکنین', desc: 'ارتباط هوشمند با ساکنان.' },
-  { icon: LayoutDashboard, label: 'داشبورد مدیریتی', desc: 'تصمیم‌گیری مبتنی بر داده.' },
+  { icon: LayoutDashboard, label: 'داشبورد مدیریتی', desc: 'تصمیم‌گیری آگاهانه و دقیق.' },
 ]
 
 export function EcosystemSection() {
@@ -103,7 +103,7 @@ export function EcosystemSection() {
             <span className="text-gold-gradient">TAJ HUB</span>
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
-            تمام ماژول‌های موردنیاز برای مدیریت یکپارچه ساختمان، در یک سیستم‌جامع هوشمند گرد هم آمده‌اند.
+            تمام قابلیت‌های موردنیاز برای مدیریت یکپارچه ساختمان، در یک سیستم‌جامع هوشمند گرد هم آمده‌اند.
           </p>
         </Reveal>
 
@@ -125,7 +125,7 @@ export function EcosystemSection() {
 
         <Reveal className="mt-14 text-center" delay={100}>
           <p className="mx-auto max-w-lg text-sm leading-relaxed text-muted-foreground">
-            همه این ماژول‌ها در کنار یکدیگر، تصویری کامل از ساختمان شما ایجاد می‌کنند.
+            همه این قابلیت‌ها در کنار یکدیگر، تصویری کامل از ساختمان شما ایجاد می‌کنند.
           </p>
           <Link
             href="/services"
@@ -149,7 +149,7 @@ const reasons = [
   'شفافیت مدیریتی',
   'تجربه‌ای آرام و لوکس برای ساکنین',
   'کاهش ریسک‌های عملیاتی',
-  'تصمیم‌گیری مبتنی بر داده',
+    'تصمیم‌گیری آگاهانه و دقیق',
 ]
 
 export function WhySection() {
