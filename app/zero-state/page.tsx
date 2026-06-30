@@ -262,7 +262,7 @@ export default function ZeroStatePage() {
             {chapters.map((c, i) => (
               <Reveal key={c.title} delay={(i % 4) * 80}>
                 <article className="group relative h-full overflow-hidden rounded-xl border border-gold/12 bg-card/40 p-6 transition-all duration-500 hover:-translate-y-1 hover:border-gold/35 hover:bg-card hover:shadow-[0_18px_50px_-24px_oklch(0.8_0.14_80/0.6)]">
-                  <span className="absolute left-4 top-4 flex h-7 w-7 items-center justify-center rounded-full border border-gold/30 text-xs font-semibold text-gold">
+                  <span className="absolute left-4 top-4 text-sm font-medium text-muted-foreground/35">
                     {i + 1}
                   </span>
                   <span className="flex h-14 w-14 items-center justify-center rounded-xl border border-gold/20 bg-gold/5 text-gold transition-all duration-500 group-hover:shadow-[0_0_28px_-8px_oklch(0.8_0.14_80)]">
@@ -294,7 +294,7 @@ export default function ZeroStatePage() {
                   گزارش وضعیت صفر ساختمان
                 </h2>
                 <p className="mt-3 leading-relaxed text-muted-foreground">
-                  پس از تکمیل ارزیابی ۱۶ فصل، گزارش جامعی شامل وضعیت ساختمان، ریسک‌ها، اولویت تعمیرات، برنامه نگهداری پیش��یرانه (PM) و یشنهادهای اجرایی ارائه می‌شود.
+                  پس از تکمیل ارزیابی ۱۶ فصل، گزارش جامعی شامل وضعیت ساختمان، ریسک‌ها، اولویت تعمیرات، برنامه نگهداری پیش���یرانه (PM) و یشنهادهای اجرایی ارائه می‌شود.
                 </p>
                 <ul className="mt-5 flex flex-wrap gap-x-6 gap-y-2 text-sm text-muted-foreground">
                   <li className="flex items-center gap-2">
