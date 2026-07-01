@@ -125,14 +125,14 @@ export function SiteHeader() {
           </div>
 
           {/* Dashboard login */}
-          <button
-            type="button"
+          <Link
+            href="/login"
             className="group flex items-center gap-2 rounded-md bg-gradient-to-l from-[oklch(0.62_0.1_68)] to-[oklch(0.85_0.1_85)] px-5 py-2 text-sm font-semibold text-[oklch(0.14_0.01_60)] shadow-[0_0_24px_-6px_oklch(0.8_0.14_80)] transition-all duration-300 hover:shadow-[0_0_30px_-4px_oklch(0.8_0.14_80)]"
             aria-label="ورود به داشبورد"
           >
             <LogIn className="h-4 w-4 transition-transform duration-300 group-hover:scale-110" />
             ورود به داشبورد
-          </button>
+          </Link>
         </div>
 
         <button
@@ -180,13 +180,14 @@ export function SiteHeader() {
               </button>
             ))}
           </div>
-          <button
-            type="button"
+          <Link
+            href="/login"
+            onClick={() => setOpen(false)}
             className="mt-2 flex items-center justify-center gap-2 rounded-md bg-gradient-to-l from-[oklch(0.62_0.1_68)] to-[oklch(0.85_0.1_85)] px-3 py-3 text-sm font-semibold text-[oklch(0.14_0.01_60)]"
           >
             <LogIn className="h-4 w-4" />
             ورود به داشبورد
-          </button>
+          </Link>
         </nav>
       </div>
     </header>
